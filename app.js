@@ -15,8 +15,7 @@ app.get('/login', function(req, res) {
 });
 app.post('/login_user', function (req, res) {
     var email = req.body.email;
-    var passw=req.body.password;
-
+  
     MongoClient.connect('mongodb://localhost:27017', function (err, client) {
     if (err) throw err;
 
@@ -24,7 +23,7 @@ app.post('/login_user', function (req, res) {
 
    
     db.collection('user-login').findOne({ email:req.body.email}, function(err, user) {
-        console.log(email)
+      
         if(user ===null){
             console.log('user does not exist');
           res.end("Login invalid");
