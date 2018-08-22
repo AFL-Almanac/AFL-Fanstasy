@@ -13,10 +13,10 @@
             else {
                 $(this).removeClass('has-val');
             }
-        })    
+        })
     })
-  
-  
+
+
     /*==================================================================
     [ Validate ]*/
     var input = $('.validate-input .input100');
@@ -51,6 +51,8 @@
             if($(input).val().trim() == ''){
                 return false;
             }
+            alert("Input not Valid");
+            location.reload();
         }
     }
 
@@ -65,7 +67,7 @@
 
         $(thisAlert).removeClass('alert-validate');
     }
-    
+
     /*==================================================================
     [ Show pass ]*/
     var showPass = 0;
@@ -80,7 +82,7 @@
             $(this).removeClass('active');
             showPass = 0;
         }
-        
+
     });
 
 
