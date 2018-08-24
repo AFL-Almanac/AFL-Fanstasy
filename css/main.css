@@ -578,3 +578,9 @@ iframe {
   border-radius: 50%;
   margin-top: 20px;
 }
+.titleBar{
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+}
