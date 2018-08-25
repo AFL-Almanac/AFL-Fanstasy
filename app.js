@@ -58,7 +58,7 @@ app.post('/login_user', function (req, res) {
             //dispaly error message
            // req.flash('userNotExist', 'User does not exist!');
 
-          res.redirect('/login');
+          res.redirect('/');
        }else if (user.email === req.body.email && user.password === req.body.password){
            req.session.user = user;
            console.log('session created');
@@ -71,7 +71,7 @@ app.post('/login_user', function (req, res) {
        console.log("Credentials wrong");
         //dispaly error message
         // req.flash('authenticationFailed', 'Used id and password does not matched!');
-       res.redirect('/login');
+       res.redirect('/');
        res.end("Login invalid");
      }
 });
