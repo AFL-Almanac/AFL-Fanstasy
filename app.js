@@ -3,15 +3,19 @@ var session = require('express-session');
 var app = express();
 var path = require('path');
 var bodyParser = require("body-parser");
+var cookieParser = require('cookie-parser');
 var flash = require('req-flash');
 var bcrypt = require('bcrypt');
 const saltRounds = 10;
 const myPlaintextPassword = 's0/\/\P4$$w0rD';
 const someOtherPlaintextPassword = 'not_bacon';
+
 app.use(bodyParser.urlencoded({ extended: false }));
 
+app.use(cookieParser());
 app.use(session({
-    secret: 'user_id',
+    key: 'user_id',
+    secret: 'somerandonstuffs',
     resave: true,
     saveUninitialized: false,
     cookie: { maxAge: 60000 }
@@ -26,17 +30,36 @@ app.get('/', function(req, res) {
 app.get('/login', function(req, res) {
     res.sendFile(path.join(__dirname + '/login.html'));
 });
+app.get('/profile', function(req, res) {
+    if (req.session.user && req.cookies.user_id) {
+        res.sendFile(__dirname + '/profile.html');
+    } else {
+        console.log(req.session.user +''+  req.cookies.user_id);
+        console.log('login first');
+        res.redirect('/');
+    }
+});
+   
+app.get('/leaderboard', (req, res) => {
+    if (req.session.user && req.cookies.user_id) {
+        res.sendFile(__dirname + '/leaderboard.html');
+    } else {
+        console.log(req.session.user +''+  req.cookies.user_id);
+        console.log('login first');
+        res.redirect('/');
+    }
+});
 
 // GET /logout
-app.post('/logout', function(req, res) {
+app.get('/logout', function(req, res) {
     if (req.session) {
       // delete session object
       req.session.destroy(function(err) {
         if(err) {
           console.log('error');
         } else {
-            //redirect to login page
-        res.redirect('/login');
+            console.log('logout successfully');
+        res.redirect('/');
         }
       });
     }
@@ -60,18 +83,18 @@ app.post('/login_user', function (req, res) {
 
           res.redirect('/login');
        }else if (user.email === req.body.email && user.password === req.body.password){
-           req.session.user = user;
-           console.log('session created');
+           req.session.user = user.email;
+           console.log('session created ' + user.user_id);
       console.log('login successful');
       
       var name= user.name;
       res.status(200).send;
-      res.send('welcome '+name);
+      res.send('welcome '+name + '<br><br><a href="/leaderboard">leaderboard</a>');
      } else {
        console.log("Credentials wrong");
         //dispaly error message
         // req.flash('authenticationFailed', 'Used id and password does not matched!');
-       res.redirect('/login');
+       res.redirect('/');
        res.end("Login invalid");
      }
 });
@@ -86,9 +109,6 @@ var sessionChecker = (req, res, next) => {
     }    
 };
 app.use(express.static(__dirname + '/public'));
-
-
-
 
 
 app.listen(3000);
