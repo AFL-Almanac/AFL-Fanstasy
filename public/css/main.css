@@ -588,6 +588,7 @@ iframe {
 
 }
 .bodyContainer{
+
   margin-top: 50px;
   margin-left: 10%;
   margin-right: 10%;
@@ -636,4 +637,7 @@ iframe {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.modalColor{
+
 }
