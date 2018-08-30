@@ -594,6 +594,9 @@ iframe {
   margin-right: 10%;
   margin-bottom: 50px;
 }
+.bodyContainer p {
+  font-size: 20px;
+}
 .text-center {
   margin-left: 10px;
   margin-right: 10px;
@@ -637,7 +640,4 @@ iframe {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-.modalColor{
-
 }
