@@ -543,7 +543,7 @@ iframe {
 
 /* nicks input */
 
-.margins{
+/* .margins{
   margin-top: 50px;
   border-radius: 5px;
   border: 2px solid blue;
@@ -583,4 +583,56 @@ iframe {
   padding-left: 20px;
   padding-right: 20px;
 
+} */
+#section1{
+
+}
+.bodyContainer{
+  margin-top: 50px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.text-center {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.parallax {
+  /* The image used */
+  background-image: url("public/images/534701647-640x640 1.jpg");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax1 {
+  /* The image used */
+  background-image: url("public/images/534701647-640x640 1.jpg");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax2 {
+  /* The image used */
+  background-image: url("public/images/534701647-640x640 1.jpg");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
