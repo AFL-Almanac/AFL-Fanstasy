@@ -591,6 +591,7 @@ iframe {
   margin-top: 50px;
   margin-left: 10%;
   margin-right: 10%;
+  margin-bottom: 50px;
 }
 .text-center {
   margin-left: 10px;
@@ -598,7 +599,7 @@ iframe {
 }
 .parallax {
   /* The image used */
-  background-image: url("public/images/534701647-640x640 1.jpg");
+  background-image: url("../images/1.jpg");
 
   /* Set a specific height */
   min-height: 500px;
@@ -611,7 +612,7 @@ iframe {
 }
 .parallax1 {
   /* The image used */
-  background-image: url("public/images/534701647-640x640 1.jpg");
+  background-image: url("../images/534701647-640x640 1.jpg");
 
   /* Set a specific height */
   min-height: 500px;
@@ -625,7 +626,7 @@ iframe {
 
 .parallax2 {
   /* The image used */
-  background-image: url("public/images/534701647-640x640 1.jpg");
+  background-image: url("../images/534701647-640x640 1.jpg");
 
   /* Set a specific height */
   min-height: 500px;
