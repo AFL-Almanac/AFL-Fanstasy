@@ -200,9 +200,9 @@ iframe {
 /*------------------------------------------------------------------
 [ Form ]*/
 
-.login100-form {
+/* .login100-form {
   width: 100%;
-}
+} */
 
 .login100-form-logo {
   font-size: 60px;
@@ -604,7 +604,7 @@ iframe {
 .parallax {
   /* The image used */
   background-image: url("../images/1.jpg");
-
+  opacity: 0.5;
   /* Set a specific height */
   min-height: 500px;
 
@@ -617,7 +617,7 @@ iframe {
 .parallax1 {
   /* The image used */
   background-image: url("../images/534701647-640x640 1.jpg");
-
+  opacity: 0.5;
   /* Set a specific height */
   min-height: 500px;
 
@@ -631,7 +631,7 @@ iframe {
 .parallax2 {
   /* The image used */
   background-image: url("../images/534701647-640x640 1.jpg");
-
+  opacity: 0.5;
   /* Set a specific height */
   min-height: 500px;
 
@@ -640,4 +640,24 @@ iframe {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 30%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 100px;
+  letter-spacing: 10px;
+  border-radius: 5px;
+
 }
