@@ -54,9 +54,17 @@
 
 
 <div class="parallax">
-	<div class="caption">
-    <span class="border">KFL</span>
+
+	<div class="caption1">
+    <span class="border">Welcome to the</span>
   </div>
+	<div class="caption">
+    <span class="border">K  <span style="color: red">F</span> L</span>
+  </div>
+	<div class="caption2">
+    <span class="border"><span style="color: red">K</span>ids <span style="color: red">F</span>antasy <span style="color: red">L</span>eague</span>
+  </div>
+
 </div>
 <div class="bodyContainer">
 
@@ -107,53 +115,101 @@
 
 		</div>
 </div>
-<!-- Modal -->
-<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="loginModal">Login</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
 
-				<form action="/login_user" method="post"  class=" validate-form bg-danger">
+		<!-- Modal -->
+		<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="loginModal">Login</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
 
-					<div class="validate-input" data-validate = "Enter email">
-						<input class="input100 modalColor" type="text" name="email" placeholder="Login">
-						<span class="focus-input100" data-placeholder="&#xf207;"></span>
+						<form action="/login_user" method="post"  class=" validate-form bg-danger loginClass">
+
+							<div class="validate-input" data-validate = "Enter email">
+								<input class="input100 modalColor" type="text" name="email" placeholder="Login">
+								<span class="focus-input100" data-placeholder="&#xf207;"></span>
+							</div>
+
+							<div class="validate-input" data-validate="Enter password">
+								<input class="input100" type="password" name="password" placeholder="Password">
+								<span class="focus-input100" data-placeholder="&#xf191;"></span>
+							</div>
+
+							<div class="contact100-form-checkbox">
+								<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
+								<label class="label-checkbox100" for="ckb1">
+									Remember me
+								</label>
+							</div>
+
+							<div class="text-center p-t-90">
+								<a class="txt1" href="#">
+									Forgot Password?
+								</a>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#exampleModal">Sign Up</button>
+								<button  class="btn btn-primary">Login</button>
+							</div>
+						</form>
+
+		      </div>
+
+		    </div>
+		  </div>
+		</div>
+
+		<!-- //signup -->
+
+		<!-- Modal -->
+		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+
+						<form class="modalSignupBG">
+
+							<div>
+								<input type="text" name="username" placeholder="Username">
+
+							</div>
+
+							<div>
+								<input type="password" name="pass" placeholder="Password">
+
+							</div>
+
+							<div>
+								<input type="email" name="email" placeholder="Email">
+
+							</div>
+
+
+
+
+						</form>
+
 					</div>
 
-					<div class="validate-input" data-validate="Enter password">
-						<input class="input100" type="password" name="password" placeholder="Password">
-						<span class="focus-input100" data-placeholder="&#xf191;"></span>
-					</div>
-
-					<div class="contact100-form-checkbox">
-						<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
-						<label class="label-checkbox100" for="ckb1">
-							Remember me
-						</label>
-					</div>
-
-					<div class="text-center p-t-90">
-						<a class="txt1" href="#">
-							Forgot Password?
-						</a>
-					</div>
 					<div class="modal-footer">
-						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-						<button  class="btn btn-primary">Login</button>
+						<button type="button" class="btn btn-primary" data-dismiss="modal" data-toggle="modal" data-target="#loginModal">Login</button>
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Enter</button>
+
 					</div>
-				</form>
-
-      </div>
-
-    </div>
-  </div>
-</div>
+				</div>
+			</div>
+		</div>
 
 </body>
 

@@ -84,41 +84,43 @@ ul, li {
 
 
 /*---------------------------------------------*/
-input {
+
+/*login inputs color */
+.loginClass input {
 	outline: none;
 	border: none;
 }
 
-textarea {
+.loginClass textarea {
   outline: none;
   border: none;
 }
 
-textarea:focus, input:focus {
+.loginClass textarea:focus, input:focus {
   border-color: transparent !important;
 }
 
-input:focus::-webkit-input-placeholder { color:transparent; }
-input:focus:-moz-placeholder { color:transparent; }
-input:focus::-moz-placeholder { color:transparent; }
-input:focus:-ms-input-placeholder { color:transparent; }
+.loginClass input:focus::-webkit-input-placeholder { color:transparent; }
+.loginClass input:focus:-moz-placeholder { color:transparent; }
+.loginClass input:focus::-moz-placeholder { color:transparent; }
+.loginClass input:focus:-ms-input-placeholder { color:transparent; }
 
-textarea:focus::-webkit-input-placeholder { color:transparent; }
-textarea:focus:-moz-placeholder { color:transparent; }
-textarea:focus::-moz-placeholder { color:transparent; }
-textarea:focus:-ms-input-placeholder { color:transparent; }
+.loginClass textarea:focus::-webkit-input-placeholder { color:transparent; }
+.loginClass textarea:focus:-moz-placeholder { color:transparent; }
+.loginClass textarea:focus::-moz-placeholder { color:transparent; }
+.loginClass textarea:focus:-ms-input-placeholder { color:transparent; }
 
-input::-webkit-input-placeholder { color: #fff;}
-input:-moz-placeholder { color: #fff;}
-input::-moz-placeholder { color: #fff;}
-input:-ms-input-placeholder { color: #fff;}
+.loginClass input::-webkit-input-placeholder { color: #fff;}
+.loginClass input:-moz-placeholder { color: #fff;}
+.loginClass input::-moz-placeholder { color: #fff;}
+.loginClass input:-ms-input-placeholder { color: #fff;}
 
-textarea::-webkit-input-placeholder { color: #fff;}
-textarea:-moz-placeholder { color: #fff;}
-textarea::-moz-placeholder { color: #fff;}
-textarea:-ms-input-placeholder { color: #fff;}
+.loginClass textarea::-webkit-input-placeholder { color: #fff;}
+.loginClass textarea:-moz-placeholder { color: #fff;}
+.loginClass textarea::-moz-placeholder { color: #fff;}
+.loginClass textarea:-ms-input-placeholder { color: #fff;}
 
-label {
+.loginClass label {
   margin: 0;
   display: block;
 }
@@ -645,7 +647,7 @@ iframe {
 .caption {
   position: absolute;
   left: 0;
-  top: 30%;
+  top: 5%;
   width: 100%;
   text-align: center;
   color: #000;
@@ -653,11 +655,59 @@ iframe {
 }
 
 .caption span.border {
-  background-color: #111;
+
   color: #fff;
   padding: 18px;
-  font-size: 100px;
+  font-size: 300px;
   letter-spacing: 10px;
   border-radius: 5px;
+  border: none !important;
 
 }
+
+.caption1 {
+  position: absolute;
+  left: 0;
+  top: 10%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+
+}
+
+.caption1 span.border {
+
+  color: #fff;
+  padding: 18px;
+  font-size: 30px;
+  letter-spacing: 10px;
+  border-radius: 5px;
+  border: none !important;
+
+}
+
+.caption2 {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+
+}
+
+.caption2 span.border {
+  background-color: black;
+  color: #fff;
+  padding: 18px;
+  font-size: 40px;
+  letter-spacing: 10px;
+  border-radius: 20px;
+  border: 1px;
+
+}
+.modalSignupBG{
+  text-align: center;
+}
+
+/* sign up inputs  */
