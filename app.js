@@ -34,6 +34,18 @@ app.get('/teams', function(req, res) {
     res.json(teams);
 });
 
+app.get('/userTeams', function (req, res) {
+    MongoClient.connect('mongodb://localhost:27017', function (err, client) {
+        if (err) throw err;
+
+        var db = client.db('kfl');
+        db.collection('user-login').findOne({email: req.session.user.email}, function (err, user) {
+            res.json(user);
+        });
+
+    });
+});
+
 // GET /logout
 app.post('/logout', function(req, res) {
     if (req.session) {

@@ -10,6 +10,13 @@
         oReq.addEventListener("load", reqListener);
         oReq.open("GET", "/teams");
         oReq.send();
+        function reqListener1 () {
+            console.log(this.responseText);
+        }
+        var userData = new XMLHttpRequest();
+        userData.addEventListener("load", reqListener1);
+        userData.open("GET", "/userTeams");
+        userData.send();
     </script>
     <title>Profile</title>
 </head>
