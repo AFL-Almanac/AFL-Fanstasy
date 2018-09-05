@@ -17,6 +17,32 @@
         userData.addEventListener("load", reqListener1);
         userData.open("GET", "/userTeams");
         userData.send();
+
+        // dummy response when user has a team
+     /*   var xx= {
+            "_id": "5b82aadfc4bad1626d0f6564",
+            "email": "mhsant@deakin.edu.au",
+            "password": "",
+            "user_name": "Monica",
+            "name": "Monica",
+            "team": [{"name": "Player 1", "imgUrl": ""}, {
+                "name": "Player 2",
+                "imgUrl": "player.png"
+            }, {"name": "Player 3", "imgUrl": "player.png"}, {
+                "name": "Player 4",
+                "imgUrl": "player.png"
+            }, {"name": "Player 5", "imgUrl": "player.png"}]
+        }*/
+     // dummy response when user does not have a team
+     /*   var xx= {
+            "_id": "5b82aadfc4bad1626d0f6564",
+            "email": "mhsant@deakin.edu.au",
+            "password": "",
+            "user_name": "Monica",
+            "name": "Monica"
+        }*/
+
+     //todo you need to check this condition and display the page accordingly
     </script>
     <title>Profile</title>
 </head>
