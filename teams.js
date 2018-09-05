@@ -7,88 +7,88 @@ module.exports  =  [
     },
     {
         "seq":2,
-        "name":"Richmond",
-        "code":"RICHMOND"
+        "name":"West Coast Eagles",
+        "code":"WESTCOASTEAGLES"
 
     },{
         "seq":3,
-        "name":"Richmond",
-        "code":"RICHMOND"
+        "name":"Collingwood",
+        "code":"COLLINGWOOD"
 
     },{
         "seq":4,
-        "name":"Richmond",
-        "code":"RICHMOND"
+        "name":"Hawthorn",
+        "code":"HAWTHORN"
 
     },{
         "seq":5,
-        "name":"Richmond",
-        "code":"RICHMOND"
+        "name":"Melbourne",
+        "code":"MELBOURNE"
 
     },{
         "seq":6,
-        "name":"Richmond",
-        "code":"RICHMOND"
+        "name":"Sydney Swans",
+        "code":"SYDNEY SWANS"
 
     },{
         "seq":7,
-        "name":"Richmond",
-        "code":"RICHMOND"
+        "name":"GWS Giants",
+        "code":"GWS GIANTS"
 
     },{
         "seq":8,
-        "name":"Richmond",
-        "code":"RICHMOND"
+        "name":"Geelong Cats",
+        "code":"GELLONGCATS"
 
     },{
         "seq":9,
-        "name":"Richmond",
-        "code":"RICHMOND"
+        "name":"North Melbourne",
+        "code":"NORTHMELBOURNE"
 
     },{
         "seq":10,
-        "name":"Richmond",
-        "code":"RICHMOND"
+        "name":"Port Adelaide",
+        "code":"PORTADELAIDE"
 
     },{
         "seq":11,
-        "name":"Richmond",
-        "code":"RICHMOND"
+        "name":"Essendon",
+        "code":"ESSENDON"
 
     },{
         "seq":12,
-        "name":"Richmond",
-        "code":"RICHMOND"
+        "name":"Adelaide Crows",
+        "code":"ADELAIDECROWS"
 
     },{
         "seq":13,
-        "name":"Richmond",
-        "code":"RICHMOND"
+        "name":"Western Bulldogs",
+        "code":"WESTERNBULLDOGS"
 
     },{
         "seq":14,
-        "name":"Richmond",
-        "code":"RICHMOND"
+        "name":"Fremantle",
+        "code":"FREMANTLE"
 
     },{
         "seq":15,
-        "name":"Richmond",
-        "code":"RICHMOND"
+        "name":"Brisbane Lions",
+        "code":"BRISBANELIONS"
 
     },{
         "seq":16,
-        "name":"Richmond",
-        "code":"RICHMOND"
+        "name":"St Kilda",
+        "code":"STKILDA"
 
     },{
         "seq":17,
-        "name":"Richmond",
-        "code":"RICHMOND"
+        "name":"Gold Coast Suns",
+        "code":"GOLDCOASTSUNS"
 
     },{
         "seq":18,
-        "name":"Richmond",
-        "code":"RICHMOND"
+        "name":"Carlton",
+        "code":"CARLTON"
 
     }
 

@@ -8,6 +8,8 @@ var bcrypt = require('bcrypt');
 const saltRounds = 10;
 const myPlaintextPassword = 's0/\/\P4$$w0rD';
 const someOtherPlaintextPassword = 'not_bacon';
+var teams = require('./teams.js');
+
 app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use(session({
@@ -16,7 +18,7 @@ app.use(session({
     saveUninitialized: false,
     cookie: { maxAge: 60000 }
   }));
-var MongoClient = require('mongodb').MongoClient
+var MongoClient = require('mongodb').MongoClient;
 // viewed at http://localhost:3000
 app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname + '/index.html'));
@@ -25,6 +27,11 @@ app.get('/', function(req, res) {
 
 app.get('/login', function(req, res) {
     res.sendFile(path.join(__dirname + '/login.html'));
+});
+
+app.get('/teams', function(req, res) {
+
+    res.json(teams);
 });
 
 // GET /logout
@@ -66,7 +73,7 @@ app.post('/login_user', function (req, res) {
       
       var name= user.name;
       res.status(200).send;
-      res.send('welcome '+name);
+      res.sendFile(path.join(__dirname + '/profile.html'));
      } else {
        console.log("Credentials wrong");
         //dispaly error message
