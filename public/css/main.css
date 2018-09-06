@@ -690,7 +690,7 @@ iframe {
 .caption2 {
   position: absolute;
   left: 0;
-  top: 50%;
+  top: 53%;
   width: 100%;
   text-align: center;
   color: #000;
@@ -705,7 +705,7 @@ iframe {
   letter-spacing: 10px;
   border-radius: 20px;
   border: 1px;
-  
+
 
 }
 .modalSignupBG{
