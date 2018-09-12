@@ -84,43 +84,41 @@ ul, li {
 
 
 /*---------------------------------------------*/
-
-/*login inputs color */
-.loginClass input {
+input {
 	outline: none;
 	border: none;
 }
 
-.loginClass textarea {
+textarea {
   outline: none;
   border: none;
 }
 
-.loginClass textarea:focus, input:focus {
+textarea:focus, input:focus {
   border-color: transparent !important;
 }
 
-.loginClass input:focus::-webkit-input-placeholder { color:transparent; }
-.loginClass input:focus:-moz-placeholder { color:transparent; }
-.loginClass input:focus::-moz-placeholder { color:transparent; }
-.loginClass input:focus:-ms-input-placeholder { color:transparent; }
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; }
+input:focus::-moz-placeholder { color:transparent; }
+input:focus:-ms-input-placeholder { color:transparent; }
 
-.loginClass textarea:focus::-webkit-input-placeholder { color:transparent; }
-.loginClass textarea:focus:-moz-placeholder { color:transparent; }
-.loginClass textarea:focus::-moz-placeholder { color:transparent; }
-.loginClass textarea:focus:-ms-input-placeholder { color:transparent; }
+textarea:focus::-webkit-input-placeholder { color:transparent; }
+textarea:focus:-moz-placeholder { color:transparent; }
+textarea:focus::-moz-placeholder { color:transparent; }
+textarea:focus:-ms-input-placeholder { color:transparent; }
 
-.loginClass input::-webkit-input-placeholder { color: #fff;}
-.loginClass input:-moz-placeholder { color: #fff;}
-.loginClass input::-moz-placeholder { color: #fff;}
-.loginClass input:-ms-input-placeholder { color: #fff;}
+input::-webkit-input-placeholder { color: #fff;}
+input:-moz-placeholder { color: #fff;}
+input::-moz-placeholder { color: #fff;}
+input:-ms-input-placeholder { color: #fff;}
 
-.loginClass textarea::-webkit-input-placeholder { color: #fff;}
-.loginClass textarea:-moz-placeholder { color: #fff;}
-.loginClass textarea::-moz-placeholder { color: #fff;}
-.loginClass textarea:-ms-input-placeholder { color: #fff;}
+textarea::-webkit-input-placeholder { color: #fff;}
+textarea:-moz-placeholder { color: #fff;}
+textarea::-moz-placeholder { color: #fff;}
+textarea:-ms-input-placeholder { color: #fff;}
 
-.loginClass label {
+label {
   margin: 0;
   display: block;
 }
@@ -202,9 +200,9 @@ iframe {
 /*------------------------------------------------------------------
 [ Form ]*/
 
-/* .login100-form {
+.login100-form {
   width: 100%;
-} */
+}
 
 .login100-form-logo {
   font-size: 60px;
@@ -545,7 +543,7 @@ iframe {
 
 /* nicks input */
 
-/* .margins{
+.margins{
   margin-top: 50px;
   border-radius: 5px;
   border: 2px solid blue;
@@ -585,131 +583,4 @@ iframe {
   padding-left: 20px;
   padding-right: 20px;
 
-} */
-#section1{
-
 }
-.bodyContainer{
-
-  margin-top: 50px;
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-bottom: 50px;
-}
-.bodyContainer p {
-  font-size: 20px;
-}
-.text-center {
-  margin-left: 10px;
-  margin-right: 10px;
-}
-.parallax {
-  /* The image used */
-  background-image: url("../images/1.jpg");
-  opacity: 0.5;
-  /* Set a specific height */
-  min-height: 500px;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.parallax1 {
-  /* The image used */
-  background-image: url("../images/534701647-640x640 1.jpg");
-  opacity: 0.5;
-  /* Set a specific height */
-  min-height: 500px;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.parallax2 {
-  /* The image used */
-  background-image: url("../images/534701647-640x640 1.jpg");
-  opacity: 0.5;
-  /* Set a specific height */
-  min-height: 500px;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.caption {
-  position: absolute;
-  left: 0;
-  top: 5%;
-  width: 100%;
-  text-align: center;
-  color: #000;
-
-}
-
-.caption span.border {
-
-  color: #fff;
-  padding: 18px;
-  font-size: 300px;
-  letter-spacing: 10px;
-  border-radius: 5px;
-  border: none !important;
-
-}
-
-.caption1 {
-  position: absolute;
-  left: 0;
-  top: 10%;
-  width: 100%;
-  text-align: center;
-  color: #000;
-
-
-}
-
-.caption1 span.border {
-
-  color: #fff;
-  padding: 18px;
-  font-size: 30px;
-  letter-spacing: 10px;
-  border-radius: 5px;
-  border: none !important;
-
-}
-
-.caption2 {
-  position: absolute;
-  left: 0;
-  top: 53%;
-  width: 100%;
-  text-align: center;
-  color: #000;
-
-}
-
-.caption2 span.border {
-  background-color: black;
-  color: #fff;
-  padding: 18px;
-  font-size: 40px;
-  letter-spacing: 10px;
-  border-radius: 20px;
-  border: 1px;
-
-
-}
-.modalSignupBG{
-  text-align: center;
-}
-
-/* sign up inputs  */

@@ -53,6 +53,10 @@ const UserDetails = mongoose.model('user-login', UserDetail, 'user-login');
 var bcrypt = require('bcrypt');
 
 const saltRounds = 10;
+const myPlaintextPassword = 's0/\/\P4$$w0rD';
+const someOtherPlaintextPassword = 'not_bacon';
+var teams = require('./teams.js');
+
 var crypto    = require('crypto'), hmac, signature;
 
 
@@ -236,6 +240,11 @@ app.get('/leaderboard', function(req, res)  {
     }
 });
 
+
+app.get('/teams', function(req, res) {
+
+    res.json(teams);
+});
 
 // GET /logout
 app.get('/logout', function(req, res) {
