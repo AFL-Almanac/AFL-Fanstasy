@@ -87,6 +87,7 @@ passport.use('login',new LocalStrategy(
         passReqToCallback : true // allows us to pass back the entire request to the callback
     },
   function(req,email, password, done) {
+
       UserDetails.findOne({
         'email': email
       }, function(err, user) {
@@ -118,7 +119,9 @@ app.post('/login_user',
     req.session.user = req.user.email;
     console.log(req.user.email);
     console.log(req.user.name);
-    res.send("Welcome "+ req.user.name + "!!" +'<br><br><a href="/leaderboard">leaderboard</a>' )
+
+    res.redirect('/profile');
+
   });
 
 
@@ -205,6 +208,7 @@ app.get('/', function(req, res) {
 });
 app.get('/error', function(req, res) {
     console.log('error login');
+        res.json({"message":"Invalid Credentials"});
         res.redirect('/');
 });
 app.get('/error_signup', function(req, res) {

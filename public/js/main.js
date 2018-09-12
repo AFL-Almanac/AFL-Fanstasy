@@ -86,6 +86,29 @@
     });
 
 
+
+    $('#loginForm').submit(function(e){
+        console.log("Sdsadas",$('#loginForm').serialize());
+        e.preventDefault();
+        $.ajax({
+            url: "/login_user",
+            type: 'POST',
+            data : $('#loginForm').serialize(),
+            success: function(res){
+                if(res.message){
+                console.log('form submitted.',res);
+                $('#errorMessage').text(res.message);
+                $('#errorMessage').show();
+                }
+                else {
+                    window.location.assign('/profile');
+                }
+            }
+        });
+        return false;
+    });
+
+
 })(jQuery);
 /*==================================================================
 // datepicker*/
