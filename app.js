@@ -31,7 +31,7 @@ passport.deserializeUser(function(id, cb) {
 });
 
 //Middleware
-const {ensureAuthentication, authorization} = require('passport-middleware');
+//const ensureAuthentication, authorization = require('passport-middleware');
 
 
  /* MONGOOSE SETUP */
@@ -54,7 +54,7 @@ var bcrypt = require('bcrypt');
 
 const saltRounds = 10;
 var crypto    = require('crypto'), hmac, signature;
-const { check, validationResult } = require('express-validator/check');
+
 
 
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -184,7 +184,7 @@ var createHash = function(password){
     return bCrypt.compareSync(password, user.password);
   }
 // middleware function to check for logged-in users
-var sessionChecker = (req, res, next) => {
+var sessionChecker = function (req, res, next){
     if (req.session.user && req.cookies.user_id) {
         res.redirect('/');
     } else {
@@ -227,7 +227,7 @@ app.get('/profile', function(req, res) {
         res.redirect('/');
     }
 });
-app.get('/leaderboard', (req, res) => {
+app.get('/leaderboard', function(req, res)  {
     if (req.session.user && req.cookies.user_id) {
         res.sendFile(__dirname + '/leaderboard.html');
     } else {
