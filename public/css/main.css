@@ -608,7 +608,7 @@ iframe {
   background-image: url("../images/1.jpg");
   opacity: 0.5;
   /* Set a specific height */
-  min-height: 500px;
+  min-height: 600px;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;

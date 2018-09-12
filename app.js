@@ -57,7 +57,7 @@ app.post('/login_user', function (req, res) {
 
     var db = client.db('kfl');
 
-   
+
     db.collection('user-login').findOne({ email:req.body.email}, function(err, user) {
         console.log(email)
         if(user ===null){
@@ -70,9 +70,10 @@ app.post('/login_user', function (req, res) {
            req.session.user = user;
            console.log('session created');
       console.log('login successful');
-      
+
       var name= user.name;
       res.status(200).send;
+      res.json({"message" : "successfully logged in"})
       res.sendFile(path.join(__dirname + '/profile.html'));
      } else {
        console.log("Credentials wrong");
@@ -90,7 +91,7 @@ var sessionChecker = (req, res, next) => {
         res.redirect('/login');
     } else {
         next();
-    }    
+    }
 };
 app.use(express.static(__dirname + '/public'));
 app.use(express.static(__dirname + '/js'));
