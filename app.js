@@ -50,14 +50,14 @@ const UserDetails = mongoose.model('user-login', UserDetail, 'user-login');
 
 
 
-var bcrypt = require('bcrypt');
+//var bcrypt = require('bcrypt');
 
 const saltRounds = 10;
-const myPlaintextPassword = 's0/\/\P4$$w0rD';
-const someOtherPlaintextPassword = 'not_bacon';
+//const myPlaintextPassword = 's0/\/\P4$$w0rD';
+//const someOtherPlaintextPassword = 'not_bacon';
 var teams = require('./teams.js');
 
-var crypto    = require('crypto'), hmac, signature;
+//var crypto    = require('crypto'), hmac, signature;
 
 
 
