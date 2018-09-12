@@ -26,6 +26,31 @@
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 <!--===============================================================================================-->
+<script type="text/javascript">
+		function reqListener () {
+				console.log(JSON.parse(this.responseText));
+				var json = JSON.parse(this.responseText)
+				for (var i = 0; i < json.length; i++) {
+					console.log(json[i]);
+					var option = document.createElement("option");
+					option.text = json[i].name;
+					option.value = json[i].code;
+					var select = document.getElementById("dropdownMenuButton");
+					select.appendChild(option);
+				}
+
+		}
+
+		var oReq = new XMLHttpRequest();
+		oReq.addEventListener("load", reqListener);
+		oReq.open("GET", "/teams");
+		oReq.send();
+
+
+</script>
+
+
+
 </head>
 
 
@@ -38,7 +63,12 @@
 		<!-- The navbar - The <a> elements are used to jump to a section in the scrollable area -->
 		<nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
 
+			<a class="navbar-brand" href="#">
+				<img src="/images/K f l cut.png" width="50" height="50" alt="">
+			</a>
+
 		  <ul class="navbar-nav">
+
 
 		    <li class="text-center"><a href="#what">What is KFL</a></li>
 
@@ -215,13 +245,10 @@
 							<br>
 							<div class="dropdown">
 
-							  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							    Favorite Team
-							  </button>
-							  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-							    <a class="dropdown-item" value="RTigers">Richmon Tigers</a>
-							    <a class="dropdown-item" value ="MelbStorm">Melbourne Storm</a>
-							  </div>
+							  <select class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+							  </select>
+
 
 							</div>
 
@@ -261,6 +288,9 @@
   <link rel="stylesheet" href="/resources/demos/style.css">
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+
 
 </body>
 </html>

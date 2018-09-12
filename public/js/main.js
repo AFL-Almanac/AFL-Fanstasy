@@ -116,3 +116,13 @@
 $( function() {
     $( "#datepicker" ).datepicker();
   } );
+
+  $('#loginForm')
+      .ajaxForm({
+          url : '/login_user', // or whatever
+          dataType : 'json',
+          success : function (response) {
+              alert("The server says: " + response);
+          }
+      })
+  ;
