@@ -209,9 +209,13 @@
 							<span aria-hidden="true">&times;</span>
 						</button>
 					</div>
+				</div>
+				<div id="errorMessageSignup" style="color:red; display:none">
+
+				</div>
 					<div class="modal-body">
 
-						<form class="modalSignupBG" >
+						<form class="modalSignupBG" action="/sign_up" method="POST" id="signupform">
 
 							<div>
 								<input type="text" name="username" placeholder="Username">
@@ -245,17 +249,12 @@
 							<br>
 							<div class="dropdown">
 
-							  <select class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							  <select class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" name="favteam" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 
 							  </select>
 
 
 							</div>
-
-
-
-
-						</form>
 
 					</div>
 
@@ -264,6 +263,7 @@
 						<button type="button" class="btn btn-secondary" data-dismiss="modal">Enter</button>
 
 					</div>
+				</form>
 				</div>
 			</div>
 		</div>
