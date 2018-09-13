@@ -27,6 +27,9 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 <!--===============================================================================================-->
 <script type="text/javascript">
+
+
+
 		function reqListener () {
 				console.log(JSON.parse(this.responseText));
 				var json = JSON.parse(this.responseText)
@@ -45,6 +48,8 @@
 		oReq.addEventListener("load", reqListener);
 		oReq.open("GET", "/teams");
 		oReq.send();
+
+
 
 
 </script>
@@ -75,6 +80,8 @@
 				<li class="text-center"><a href="#how">How do I play?</a></li>
 
 				<li class="text-center"><a href="#whatg">What do I get?</a></li>
+
+			  <li class="text-center"><a href="#whatA">What is the AFL?</a></li>
 
 				<li class="text-center"><a href="#" data-toggle="modal" data-target="#modalLoginForm">Login/Sign Up</a></li>
 			</ul>
@@ -269,7 +276,42 @@
             </div>
         </div>
 
-</body>
+		<div class="parallax2"></div>
+
+		<div class="CenterME">
+
+			<div class="bodyContainer">
+
+				<div id="whatA">
+					<h1>What is the AFL?</h1>
+					<p>It's Australias biggest sport and it's home grown!</p>
+					<p>It's home grown down under!</p>
+
+					<a href="https://www.youtube.com/watch?v=XMZYZcoAcU0&feature=youtu.be"> Click to find out more </a>
+
+
+				</div>
+
+			</div>
+
+			<!---->
+			<!--<iframe src="https://www.youtube.com/watch?v=XMZYZcoAcU0&feature=youtu.be"></iframe>-->
+			<!--<div class="embed-responsive embed-responsive-16by9">-->
+				<!--<iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=XMZYZcoAcU0&feature=youtu.be" allowfullscreen></iframe>-->
+
+			<!--</div>-->
+
+		</div>
+
+
+
+
+
+
+
+
+
+	</body>
 
 
 
