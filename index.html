@@ -27,6 +27,9 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 <!--===============================================================================================-->
 <script type="text/javascript">
+
+
+
 		function reqListener () {
 				console.log(JSON.parse(this.responseText));
 				var json = JSON.parse(this.responseText)
@@ -45,6 +48,8 @@
 		oReq.addEventListener("load", reqListener);
 		oReq.open("GET", "/teams");
 		oReq.send();
+
+
 
 
 </script>
@@ -76,7 +81,9 @@
 
 				<li class="text-center"><a href="#whatg">What do I get?</a></li>
 
-				<li class="text-center"><a href="#" data-toggle="modal" data-target="#loginModal">Login/Sign Up</a></li>
+			  <li class="text-center"><a href="#whatA">What is the AFL?</a></li>
+
+				<li class="text-center"><a href="#" data-toggle="modal" data-target="#modalLoginForm">Login/Sign Up</a></li>
 			</ul>
 
 		</nav>
@@ -146,129 +153,165 @@
 		</div>
 </div>
 
-		<!-- Modal -->
-		<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
-		  <div class="modal-dialog" role="document">
-		    <div class="modal-content">
-		      <div class="modal-header">
-		        <h5 class="modal-title" id="loginModal">Login</h5>
-		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-		          <span aria-hidden="true">&times;</span>
-		        </button>
-		      </div>
-				<div id="errorMessage" style="color:red; display:none">
+
+
+
+        <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+            <div class="modal-dialog" role="document">
+	        <div class="modal-content">
+	            <div class="modal-header text-center">
+	                <h4 class="modal-title w-100 font-weight-bold">Sign in</h4>
+	                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	                    <span aria-hidden="true">&times;</span>
+	                </button>
+	            </div>
+
+	            <div class="modal-body mx-3">
+								<form class="/login_user" method="post" action="index.html" id="loginForm">
+
+
+	                <div class="md-form mb-5" >
+										<div id="errorMessage" style="color:red; display:none">
+
+										</div>
+
+	                    <i class="fa fa-envelope prefix grey-text"></i>
+	                    <input type="email" id="defaultForm-email" class="form-control validate" placeholder="Your Email">
+
+	                </div>
+
+	                <div class="md-form mb-4">
+	                    <i class="fa fa-lock prefix grey-text"></i>
+	                    <input type="password" id="defaultForm-pass" class="form-control validate" placeholder="Your Password">
+
+	                </div>
+
+	            </div>
+	            <div class="modal-footer d-flex justify-content-center">
+	                <button class="btn btn-default">Login</button>
+                    <button class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target="#exampleModal" >Register</button>
+	            </div>
+							</form>
+	        </div>
+	    </div>
+	</div>
+
+
+
+
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header text-center">
+                        <h4 class="modal-title w-100 font-weight-bold">Sign in</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body mx-3">
+                        <form class="/login_user" method="post" action="index.html" id="loginForm">
+
+
+                            <div class="md-form mb-5" >
+                                <div id="errorMessage" style="color:red; display:none">
+
+                                </div>
+
+                                <i class="fa fa-envelope prefix grey-text"></i>
+                                <input type="email" id="defaultForm-email" class="form-control validate" name = "email" placeholder="Your Email">
+
+                            </div>
+
+                            <div class="md-form mb-4">
+                                <i class="fa fa-lock prefix grey-text"></i>
+                                <input type="password" id="defaultForm-pass" class="form-control validate" name ="pass"placeholder="Your Password">
+
+                            </div>
+                            <div class="md-form mb-4">
+                                <i class="fa fa-lock prefix grey-text"></i>
+                                <input type="password" id="defaultForm-pass" class="form-control validate" name = "cpass"placeholder="Confirm Password">
+
+                            </div>
+
+                            <div class="md-form mb-4">
+                                <i class="fa fa-user"></i>
+                                <input type="text" class="form-control validate" name = "uname"placeholder="Username">
+
+                            </div>
+
+                            <div class="md-form mb-4">
+                                <i class="fa fa-users"></i>
+                                <input type="text" = class="form-control validate" name ="tname "placeholder="Team name">
+
+                            </div>
+
+                            <div class="md-form mb-4">
+                                <i class="fa fa-birthday-cake grey-text"></i>
+                                <input type="text" id="datepicker" class="form-control validate" name ="bday "placeholder="Birthday">
+
+                            </div>
+
+                            <div class="dropdown">
+
+                                <select class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+                                </select>
+
+
+                            </div>
+
+
+
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center">
+                        <button class="btn btn-default" data-dismiss="modal" data-toggle="modal" data-target="#modalLoginForm">Login</button>
+                        <button class="btn btn-default">Register</button>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+		<div class="parallax2"></div>
+
+		<div class="CenterME">
+
+			<div class="bodyContainer">
+
+				<div id="whatA">
+					<h1>What is the AFL?</h1>
+					<p>It's Australias biggest sport and it's home grown!</p>
+					<p>It's home grown down under!</p>
+
+					<a href="https://www.youtube.com/watch?v=XMZYZcoAcU0&feature=youtu.be"> Click to find out more </a>
+
 
 				</div>
-		      <div class="modal-body">
 
-						<form action="/login_user" method="post"  class=" validate-form bg-danger loginClass" id="loginForm">
-
-							<div class="validate-input" data-validate = "Enter email">
-								<input class="input100 modalColor" type="text" name="email" placeholder="Login">
-								<span class="focus-input100" data-placeholder="&#xf207;"></span>
-							</div>
-
-							<div class="validate-input" data-validate="Enter password">
-								<input class="input100" type="password" name="password" placeholder="Password">
-								<span class="focus-input100" data-placeholder="&#xf191;"></span>
-							</div>
-
-							<div class="contact100-form-checkbox">
-								<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
-								<label class="label-checkbox100" for="ckb1">
-									Remember me
-								</label>
-							</div>
-
-							<div class="text-center p-t-90">
-								<a class="txt1" href="#">
-									Forgot Password?
-								</a>
-							</div>
-							<div class="modal-footer">
-								<button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#exampleModal">Sign Up</button>
-								<button  class="btn btn-primary">Login</button>
-							</div>
-						</form>
-
-		      </div>
-
-		    </div>
-		  </div>
-		</div>
-
-		<!-- //signup -->
-
-		<!-- Modal -->
-		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-			<div class="modal-dialog" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-							<span aria-hidden="true">&times;</span>
-						</button>
-					</div>
-				</div>
-				<div id="errorMessageSignup" style="color:red; display:none">
-
-				</div>
-					<div class="modal-body">
-
-						<form class="modalSignupBG" action="/sign_up" method="POST" id="signupform">
-
-							<div>
-								<input type="text" name="username" placeholder="Username">
-
-							</div>
-							<br>
-
-							<div>
-								<input type="password" name="pass" placeholder="Password">
-
-							</div>
-							<br>
-
-							<div>
-								<input type="password" name="cpass" placeholder="Confirm Password">
-							</div>
-							<br>
-							<div>
-								<input type="email" name="email" placeholder="Parents Email">
-							</div>
-							<br>
-
-							<div>
-								<input type="text" placeholder="Birthday" name ="bday "id="datepicker">
-							</div>
-
-							<br>
-							<div >
-								<input type="text" name="tname" placeholder="Team name">
-							</div>
-							<br>
-							<div class="dropdown">
-
-							  <select class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" name="favteam" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-
-							  </select>
-
-
-							</div>
-
-					</div>
-
-					<div class="modal-footer">
-						<button type="button" class="btn btn-primary" data-dismiss="modal" data-toggle="modal" data-target="#loginModal">Login</button>
-						<button type="button" class="btn btn-secondary" data-dismiss="modal">Enter</button>
-
-					</div>
-				</form>
-				</div>
 			</div>
+
+			<!---->
+			<!--<iframe src="https://www.youtube.com/watch?v=XMZYZcoAcU0&feature=youtu.be"></iframe>-->
+			<!--<div class="embed-responsive embed-responsive-16by9">-->
+				<!--<iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=XMZYZcoAcU0&feature=youtu.be" allowfullscreen></iframe>-->
+
+			<!--</div>-->
+
 		</div>
 
-</body>
+
+
+
+
+
+
+
+
+	</body>
 
 
 

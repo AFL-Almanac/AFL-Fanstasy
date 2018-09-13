@@ -107,7 +107,7 @@
         });
         return false;
     });
-   
+
 
 })(jQuery);
 /*==================================================================
@@ -147,7 +147,7 @@ $( function() {
         });
     });
 })(jQuery);
-  
+
 
     $('#signupform')
     .ajaxForm({
@@ -157,3 +157,6 @@ $( function() {
             alert("The server says: " + response);
         }
     });
+
+  //video play
+

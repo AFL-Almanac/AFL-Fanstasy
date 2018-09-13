@@ -712,4 +712,20 @@ iframe {
   text-align: center;
 }
 
+.CenterME{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 300px;
+
+}
+.CenterME button {
+  width: 500px;
+  height: 100px;
+}
+
+
+
 /* sign up inputs  */
