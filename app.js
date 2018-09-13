@@ -44,7 +44,8 @@ const UserDetail = new Schema({
     email: String,
     password: String,
     bday:String,
-    tname:String
+    tname:String,
+    favteam:String
   });
 const UserDetails = mongoose.model('user-login', UserDetail, 'user-login');
 
@@ -162,6 +163,7 @@ passport.use( 'sign_up',new LocalStrategy({
           newUser.email = req.param('email');
           newUser.bday = req.param('bday');
           newUser.tname = req.param('tname');
+          newUser.favteam = req.param('favteam');
           console.log(newUser.name);
 
           // save the user
@@ -213,6 +215,7 @@ app.get('/error', function(req, res) {
 });
 app.get('/error_signup', function(req, res) {
   console.log('error signup');
+  res.json({"message":"Unable to signup"});
       res.redirect('/');
 });
 app.get('/success',function(req, res) {
