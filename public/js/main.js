@@ -107,7 +107,7 @@
         });
         return false;
     });
-
+   
 
 })(jQuery);
 /*==================================================================
@@ -124,5 +124,36 @@ $( function() {
           success : function (response) {
               alert("The server says: " + response);
           }
-      })
-  ;
+      });
+
+(function ($) {
+      $('#signupform').submit(function(e){
+        console.log("Sdsadas",$('#signupform').serialize());
+        e.preventDefault();
+        $.ajax({
+            url: "/sign_up",
+            type: 'POST',
+            data : $('#signupform').serialize(),
+            success: function(res){
+                if(res.message){
+                console.log('form submitted.',res);
+                $('#errorMessageSignup').text(res.message);
+                $('#errorMessageSignup').show();
+                }
+                else {
+                    window.location.assign('/profile');
+                }
+            }
+        });
+    });
+})(jQuery);
+  
+
+    $('#signupform')
+    .ajaxForm({
+        url : '/sign_up', // or whatever
+        dataType : 'json',
+        success : function (response) {
+            alert("The server says: " + response);
+        }
+    });
