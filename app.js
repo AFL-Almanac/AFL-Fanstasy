@@ -49,13 +49,6 @@ const UserDetail = new Schema({
   });
 const UserDetails = mongoose.model('user-login', UserDetail, 'user-login');
 
-
-
-//var bcrypt = require('bcrypt');
-
-const saltRounds = 10;
-//const myPlaintextPassword = 's0/\/\P4$$w0rD';
-//const someOtherPlaintextPassword = 'not_bacon';
 var teams = require('./teams.js');
 
 //var crypto    = require('crypto'), hmac, signature;
@@ -150,15 +143,14 @@ passport.use( 'sign_up',new LocalStrategy({
         // already exists
         if (user) {
           console.log('User already exists');
-          return done(null, false, {message:''});
-            //  req.flash('message','User Already Exists'));
+          return done(null, false, {message:'user already exists'});
         } else {
           // if there is no user with that email
           // create the user
 
       var newUser = new UserDetails();
           // set the user's local credentials
-          newUser.name =  req.param('name');
+          newUser.name =  req.param('uname');
           newUser.password = createHash(req.param('password'));
           newUser.email = req.param('email');
           newUser.bday = req.param('bday');
@@ -211,12 +203,12 @@ app.get('/', function(req, res) {
 app.get('/error', function(req, res) {
     console.log('error login');
         res.json({"message":"Invalid Credentials"});
-        res.redirect('/');
 });
 app.get('/error_signup', function(req, res) {
+  
   console.log('error signup');
-  res.json({"message":"Unable to signup"});
-      res.redirect('/');
+  res.json({"message":"Unable to signup or user may already exist!"});
+ 
 });
 app.get('/success',function(req, res) {
     req.session.user = req.user.email;
