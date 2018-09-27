@@ -110,11 +110,11 @@ passport.use('login',new LocalStrategy(
 app.post('/login_user',
   passport.authenticate('login', { failureRedirect: '/error' }),
   function(req, res) {
-    console.log("setting user",req.user);
+
     req.session.user = req.user.email;
     req.session.team = req.user.team;
     console.log(req.user.email);
-    console.log("Session" ,req.session.team);
+
 
     res.redirect('/profile');
 

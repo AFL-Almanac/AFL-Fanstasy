@@ -88,7 +88,7 @@
 
 
     $('#loginForm').submit(function(e){
-        console.log("Sdsadas",$('#loginForm').serialize());
+
         e.preventDefault();
         $.ajax({
             url: "/login_user",
@@ -96,7 +96,6 @@
             data : $('#loginForm').serialize(),
             success: function(res){
                 if(res.message){
-                console.log('form submitted.',res);
                 $('#errorMessage').text(res.message);
                 $('#errorMessage').show();
                 }
@@ -110,7 +109,7 @@
 
     (function ($) {
         $('#signupform').submit(function(e){
-            console.log("Sdsadas",$('#signupform').serialize());
+
             e.preventDefault();
             $.ajax({
                 url: "/sign_up",
@@ -118,7 +117,6 @@
                 data : $('#signupform').serialize(),
                 success: function(res){
                     if(res.message){
-                        console.log('form submitted.',res);
                         $('#errorMessageSignup').text(res.message);
                         $('#errorMessageSignup').show();
                     }

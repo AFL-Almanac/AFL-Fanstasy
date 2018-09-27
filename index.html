@@ -30,10 +30,9 @@
 
 
         function reqListener() {
-            console.log(JSON.parse(this.responseText));
             var json = JSON.parse(this.responseText)
             for (var i = 0; i < json.length; i++) {
-                console.log(json[i]);
+
                 var option = document.createElement("option");
                 option.text = json[i].name;
                 option.value = json[i].code;
@@ -62,7 +61,7 @@
 <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
 
     <a class="navbar-brand" href="#">
-        <img src="/images/K f l cut.png" width="50" height="50" alt="">
+        <img src="/images/Kflcut.png" width="50" height="50" alt="">
     </a>
 
     <ul class="navbar-nav">
@@ -201,7 +200,7 @@
 
                     <div class="md-form mb-4">
                         <i class="fa fa-lock prefix grey-text"></i>
-                        <input type="password" id="defaultForm-pass" name="password" class="form-control validate"
+                        <input type="password" id="defaultForm-pass2" name="password" class="form-control validate"
                                placeholder="Your Password">
 
                     </div>
@@ -240,7 +239,7 @@
                         </div>
 
                         <i class="fa fa-envelope prefix grey-text"></i>
-                        <input type="email" id="defaultForm-email" class="form-control validate" name="email"
+                        <input type="email" id="defaultForm-email2" class="form-control validate" name="email"
                                placeholder="Your Email">
 
                     </div>
@@ -253,7 +252,7 @@
                     </div>
                     <div class="md-form mb-4">
                         <i class="fa fa-lock prefix grey-text"></i>
-                        <input type="password" id="defaultForm-pass" class="form-control validate" name="cpass"
+                        <input type="password" id="defaultForm-pass1" class="form-control validate" name="cpass"
                                placeholder="Confirm Password">
 
                     </div>
@@ -318,7 +317,6 @@
 <script src="js/main.js"></script>
 
 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-<link rel="stylesheet" href="/resources/demos/style.css">
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
