@@ -117,9 +117,11 @@ passport.use('login',new LocalStrategy(
 app.post('/login_user',
   passport.authenticate('login', { failureRedirect: '/error' }),
   function(req, res) {
+    console.log("setting user",req.user);
     req.session.user = req.user.email;
+    req.session.team = req.user.team;
     console.log(req.user.email);
-    console.log(req.user.name);
+    console.log("Session" ,req.session.team);
 
     res.redirect('/profile');
 
@@ -220,6 +222,7 @@ app.get('/error_signup', function(req, res) {
 });
 app.get('/success',function(req, res) {
     req.session.user = req.user.email;
+    req.session.team = req.user.team;
     res.send("Welcome "+ req.user.name + "!!" +'<br><br><a href="/leaderboard">leaderboard</a>' )
   });
 
@@ -229,13 +232,10 @@ app.get('/login', function(req, res) {
 app.get('/signup_page', function(req, res) {
     res.sendFile(path.join(__dirname + '/signup.html'));
 });
-app.get('/profile', function(req, res) {
+app.get('/profile', function (req, res) {
     if (req.session.user && req.cookies.user_id) {
         res.sendFile(__dirname + '/profile.html');
-    } else {
-        console.log(req.session.user +''+  req.cookies.user_id);
-        console.log('login first');
-        res.redirect('/');
+
     }
 });
 app.get('/leaderboard', function(req, res)  {
@@ -246,11 +246,26 @@ app.get('/leaderboard', function(req, res)  {
         res.redirect('/');
     }
 });
+app.get('/playerDraft', function(req, res)  {
+    if (req.session.user && req.cookies.user_id) {
+        res.sendFile(__dirname + '/Draft_players.html');
+    } else {
+        console.log('login first');
+        res.redirect('/');
+    }
+});
 
 
 app.get('/teams', function(req, res) {
 
     res.json(teams);
+});
+app.get('/userTeam', function(req, res) {
+    UserDetails.findOne({email: req.session.user},function(err, user) {
+        res.json(user);
+    })
+
+
 });
 
 // GET /logout
