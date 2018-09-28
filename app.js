@@ -125,7 +125,9 @@ app.post('/login_user',
 app.post('/sign_up',
   passport.authenticate('sign_up', { failureRedirect: '/error_signup' }),
   function(req, res) {
-   res.redirect('/');
+      req.session.user = req.user.email;
+      req.session.team = req.user.team;
+        res.redirect('/profile');
   });
 
 passport.use( 'sign_up',new LocalStrategy({
