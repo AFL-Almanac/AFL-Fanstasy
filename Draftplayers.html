@@ -1,7 +1,7 @@
 <!DOCTYPE>
 <html>
 <head>
-  <link rel="icon" href="images/Kfl-1.png" width="50" height="50" type="image/ico" />
+  <link rel="icon" href="img/K f l-1.png" width="50" height="50" type="image/ico" />
     <title> KFL </title>
     <meta name="Generator" content="EditPlus">
     <meta name="Author" content="">
@@ -11,26 +11,22 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Custom CSS -->
     <link href="css/custom.css" rel="stylesheet">
-    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
 
-    <script type="text/javascript" src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- Custom CSS -->
-    <link href="css/custom.css" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
     <!-- Metis Menu Plugin JavaScript -->
     <script src="js/custom.js"></script>
 
     <script type="text/javascript">
-        $(init);
+        $( init );
 
-        function init() {
-            $(".droppable-area1, .droppable-area2").sortable({
-                connectWith: ".connected-sortable",
-                stack: '.connected-sortable ul'
-            }).disableSelection();
-        }
+function init() {
+  $( ".droppable-area1, .droppable-area2" ).sortable({
+      connectWith: ".connected-sortable",
+      stack: '.connected-sortable ul'
+    }).disableSelection();
+}
     </script>
     <style>
 
@@ -42,7 +38,7 @@
             padding: 0 15px;
             min-height: 568px;
             background-color: white;
-            background: url("images/profile_bg.jpg")no-repeat;
+            background: url("img/profile_bg.jpg")no-repeat;
             background-size: cover;
         }
 
@@ -100,6 +96,24 @@
             padding: 13px 5px 5px 10px;
             min-height: 400px;
         }
+        .custom_mdl_close {
+            position: absolute !important;
+            background: #4acafb !important;
+            right: -9px !important;
+            top: -11px !important;
+            z-index: 1 !important;
+            border-radius: 50px !important;
+            opacity: 1 !important;
+            padding: 4px 8px !important;
+            font-weight: 300 !important;
+            border: 2px solid #fff !important;
+            color: #fff !important;
+        }
+
+        .custom_save_btn .modal-header {
+            padding: 0px;
+            border: none;
+        }
     </style>
 </head>
 
@@ -115,7 +129,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="site_title" href="profile.html"><img src="images/Kflcut.png" width="100" height="80" style="margin-left:75px;"> </img></a>
+                <a class="site_title" href="Profile.html"><img src="img/K f l-1.png" width="100" height="80" style="margin-left:75px;"> </img></a>
             </div>
             <!-- /.navbar-header -->
 
@@ -125,22 +139,22 @@
             <div class="navbar-default sidebar" role="navigation">
                 <div class="sidebar-nav navbar-collapse">
                     <div class="profile-userpic">
-                        <img  src="images/profile.png" class="img-responsive" alt="">
+                        <img src="img/profile.png" class="img-responsive" alt="">
                     </div>
                     <!-- END SIDEBAR USERPIC -->
                     <!-- SIDEBAR USER TITLE -->
                     <div class="profile-usertitle">
                         <div class="profile-usertitle-name">
-                            <a  href="/profile"> Marcus Doe </a>
+                            Marcus Doe
                         </div>
                     </div>
                     <ul class="nav" id="side-menu">
 
                         <li>
-                            <a href="/leaderboard"><i class="fa fa-dashboard fa-fw"></i> Leaderboard</a>
+                            <a href="Leaderboard.html"><i class="fa fa-dashboard fa-fw"></i> Leaderboard</a>
                         </li>
                         <li>
-                            <a href="/playerDraft"><i class="fa fa-table fa-fw"></i> Draft Players</a>
+                            <a href="Draft_players.html"><i class="fa fa-table fa-fw"></i> Draft Players</a>
                         </li>
 
                         <li class="custom-points">
@@ -150,7 +164,7 @@
                             <span>Gems: 100</span>
                         </li>
                         <li>
-                            <a href="/logout"><i class="fa fa-edit fa-fw"></i> Logout</a>
+                            <a href="forms.html"><i class="fa fa-edit fa-fw"></i> Logout</a>
                         </li>
                     </ul>
                 </div>
@@ -158,7 +172,6 @@
             </div>
             <!-- /.navbar-static-side -->
         </nav>
-
 
         <div id="page-wrapper">
             <div class="row">
@@ -172,19 +185,19 @@
                 <div class="col-lg-6">
                     <div id="dvSource"  class="connected-sortable droppable-area1">
                         <h3 class="page-header text-center">CHOOSE PLAYERS</h3>
-                        <img alt="" class="col-lg-1" src="images/team1.jpeg" />
-                        <img alt=""  class="col-lg-1" src="images/team2.jpeg" />
-                        <img alt=""  class="col-lg-1" src="images/team3.jpeg" />
-                        <img alt="" class="col-lg-1" src="images/team4.jpeg" />
-                        <img alt="" class="col-lg-1" src="images/team5.jpeg" />
-                        <img alt="" class="col-lg-1" src="images/team3.jpeg" />
-                        <img alt="" class="col-lg-1" src="images/team4.jpeg" />
-                        <img alt="" class="col-lg-1" src="images/team2.jpeg" />
+                        <img alt="" class="col-lg-1" src="img/team1.jpeg" />
+                        <img alt=""  class="col-lg-1" src="img/team2.jpeg" />
+                        <img alt=""  class="col-lg-1" src="img/team3.jpeg" />
+                        <img alt="" class="col-lg-1" src="img/team4.jpeg" />
+                        <img alt="" class="col-lg-1" src="img/team5.jpeg" />
+                        <img alt="" class="col-lg-1" src="img/team3.jpeg" />
+                        <img alt="" class="col-lg-1" src="img/team4.jpeg" />
+                        <img alt="" class="col-lg-1" src="img/team2.jpeg" />
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div id="dvDest" class="connected-sortable droppable-area2">
-                        <h3 class="page-header text-center">TEAM NAME: INVINCIBLES</h3>
+                      <h3 class="page-header text-center">TEAM NAME: INVINCIBLES</h3>
                     </div>
                     <br />
                     <button type="submit" class="btn btn-primary pull-right" data-toggle="modal" data-target="#myModal">Save Team</button>
@@ -212,8 +225,5 @@
 
         </div>
     </div>
-
-    </div>
-    <!-- /#wrapper -->
 </body>
 </html>
