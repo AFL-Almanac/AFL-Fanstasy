@@ -73,41 +73,46 @@
 </div>
 
 <div class="container">
+
     <div class="card-deck mb-3 text-center">
+    
         <div class="card mb-4 shadow-sm">
             <div class="card-header">
                 <h4 class="my-0 font-weight-normal">A</h4>
             </div>
             <div class="card-body">
-                <h1 class="card-title pricing-card-title">November 27,<br>1900</h1>
+                <h1 id ="opOne" class="card-title pricing-card-title">November 27,<br>1900</h1>
 
                 <button type="button" class="btn btn-lg btn-block btn-primary">Click to pick</button>
             </div>
         </div>
+
         <div class="card mb-4 shadow-sm">
             <div class="card-header">
                 <h4 class="my-0 font-weight-normal">B</h4>
             </div>
             <div class="card-body">
-                <h1 class="card-title pricing-card-title">October 2, <br>1896</h1>
+                <h1 id="opTwo"class="card-title pricing-card-title">October 2, <br>1896</h1>
 
                 <button type="button" class="btn btn-lg btn-block btn-primary">Click to pick</button>
             </div>
         </div>
+
         <div class="card mb-4 shadow-sm">
             <div class="card-header">
                 <h4 class="my-0 font-weight-normal">C</h4>
             </div>
             <div class="card-body">
-                <h1 class="card-title pricing-card-title">September 5,<br>1889</h1>
+                <h1 id="opThree" class="card-title pricing-card-title">September 5,<br>1889</h1>
 
                 <button type="button" class="btn btn-lg btn-block btn-primary">Click to pick</button>
             </div>
         </div>
+
     </div>
 
     <footer class="pt-4 my-md-5 pt-md-5 border-top">
-        <div class="row">
+        {% comment %} <div class="row">
             <div class="col-12 col-md">
                 <img class="mb-2" src="/docs/4.3/assets/brand/bootstrap-solid.svg" alt="" width="24" height="24">
                 <small class="d-block mb-3 text-muted">&copy; 2017-2019</small>
@@ -141,7 +146,7 @@
                     <li><a class="text-muted" href="#">Terms</a></li>
                 </ul>
             </div>
-        </div>
+        </div> {% endcomment %}
     </footer>
 </div>
 
@@ -163,6 +168,11 @@
 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+    document.getElementById("opOne").innerHTML ="testing";
+    document.getElementById("opTwo").innerHTML ="testing";
+    document.getElementById("opThree").innerHTML ="testing";
+</script>
 
 
 
