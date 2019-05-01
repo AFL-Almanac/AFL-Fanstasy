@@ -1,42 +1,69 @@
 const questions = {
 
-    1:["Money","Deal","Ronnie","Ronnie"],
-    2:["Money","Deal","Ronnie","Ronnie"],
-    3:["Money","Deal","Ronnie","Ronnie"],
-    4:["Money","Deal","Ronnie","Ronnie"],
-    5:["Money","Deal","Ronnie","Ronnie"],
-    // 6:[1],
-    // 7:[6],
-    // 8:[6,7,12],
-    // 9:[5],
-    // 10:[],
-    // 11:[8,10],
-    // 12:[]
+    1: ["Ronnie", "Deal", "Ronnie", "Ronnie"],
+    2: ["Nolan", "Deal", "Ronnie", "Ronnie"],
+    3: ["Jekyl", "Deal", "Ronnie", "Ronnie"],
+    4: ["Hyde", "Deal", "Ronnie", "Ronnie"],
+    5: ["Ronan", "Deal", "Ronnie", "Ronnie"],
+
 };
-var Length = questions.length;
+
+window.onload = function ()
+    {
+
+
+    //loop through questions to display in quiz page
+        for (var item in questions)
+        {
+
+            list = questions[item];
+
+            console.log(questions[item]);
+
+
+            for (var i = 0; i < list.length; i++) {
+                document.getElementById("opOne").innerHTML = list[0];
+                document.getElementById("opTwo").innerHTML = list[1];
+                document.getElementById("opThree").innerHTML = list[2];
+                answerCheck()
+
+            }
+
+        }
 
 
 
-for( var item in questions) {
 
-    list = questions[item];
+    };
 
-    console.log(questions[item]);
+function answerCheck(p)
+    {
+
+        console.log("working forloop");
+
+        for (var questionAnswered = 0; questionAnswered <= questions.length; questionAnswered++) {
+
+            var one = document.getElementById("opOne").innerHTML = list[0];
+            var two = document.getElementById("opTwo").innerHTML = list[1];
+            var three = document.getElementById("opThree").innerHTML = list[2];
+            console.log(one);
+            for (var item in questions)
+            {
+
+                list = questions[item];
+                if (p === "a") {
+                    var answer = one;
+                    var correct = list[3];
+
+                    if (answer === correct) {
+                        console.log("correct");
+                    }
+                }
 
 
-    for (var i = 0; i < list.length; i++) {
-        document.getElementById("opOne").innerHTML = list[0];
-        document.getElementById("opTwo").innerHTML = list[1];
-        document.getElementById("opThree").innerHTML = list[2];
+            }
+
+        }
+
 
     }
-
-}
-
-function answerCheck(p) {
-    if (p === "a") {
-        console.log("hello");
-        var answer = document.getElementById("opOne").innerHTML;
-        console.log(answer);
-    }
-}
