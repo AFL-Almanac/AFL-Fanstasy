@@ -49,6 +49,8 @@
 
 
     <!--</script>-->
+    <script src="public/js/quiz.js"></script>
+
 
 
 </head>
@@ -81,9 +83,9 @@
                 <h4 class="my-0 font-weight-normal">A</h4>
             </div>
             <div class="card-body">
-                <h1 id ="opOne" class="card-title pricing-card-title">November 27,<br>1900</h1>
+                <h1 id ="opOne" class="card-title pricing-card-title"></h1>
 
-                <button type="button" class="btn btn-lg btn-block btn-primary">Click to pick</button>
+                <button type="button" class="btn btn-lg btn-block btn-primary" onclick="answerCheck('a')">Click to pick</button>
             </div>
         </div>
 
@@ -92,9 +94,9 @@
                 <h4 class="my-0 font-weight-normal">B</h4>
             </div>
             <div class="card-body">
-                <h1 id="opTwo"class="card-title pricing-card-title">October 2, <br>1896</h1>
+                <h1 id="opTwo"class="card-title pricing-card-title"></h1>
 
-                <button type="button" class="btn btn-lg btn-block btn-primary">Click to pick</button>
+                <button type="button" class="btn btn-lg btn-block btn-primary" onclick="answerCheck('b')">Click to pick</button>
             </div>
         </div>
 
@@ -103,9 +105,9 @@
                 <h4 class="my-0 font-weight-normal">C</h4>
             </div>
             <div class="card-body">
-                <h1 id="opThree" class="card-title pricing-card-title">September 5,<br>1889</h1>
+                <h1 id="opThree" class="card-title pricing-card-title"></h1>
 
-                <button type="button" class="btn btn-lg btn-block btn-primary">Click to pick</button>
+                <button type="button" class="btn btn-lg btn-block btn-primary" onclick="answerCheck('c')">Click to pick</button>
             </div>
         </div>
 
@@ -168,11 +170,7 @@
 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<script>
-    document.getElementById("opOne").innerHTML ="testing";
-    document.getElementById("opTwo").innerHTML ="testing";
-    document.getElementById("opThree").innerHTML ="testing";
-</script>
+
 
 
 
