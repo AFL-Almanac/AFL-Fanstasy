@@ -18,11 +18,11 @@ option = {
     toolbox: {
         show : true,
         feature : {
-            dataView : {show: true, readOnly: false},
-            magicType : {show: true, type: ['line', 'bar']},
+            dataView : {show: true, title: 'Text View', lang: ['Text View','OK','Cancel'], readOnly: false},
+            magicType : {show: true, title: {line: 'Line',bar: 'Bar'},type: ['line', 'bar']},
             //brush: {type: ['rect', 'polygon', 'lineX', 'lineY', 'keep', 'clear']},
-            restore : {show: true},
-            saveAsImage : {show: true}
+            restore : {show: true, title: 'Restore'},
+            saveAsImage : {show: true, title: 'Save'}
         }
     },
     calculable : true,
@@ -76,5 +76,7 @@ option = {
 if (option && typeof option === "object") {
     myChart.setOption(option, true);
 }
+
+
        
  
