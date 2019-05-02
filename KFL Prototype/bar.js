@@ -13,7 +13,7 @@ option = {
         trigger: 'axis'
     },
     legend: {
-        data:['Player1','Player2']
+        data:['Player1','Player2','Player3','Player4','Player5']
     },
     toolbox: {
         show : true,
@@ -29,7 +29,7 @@ option = {
     xAxis : [
         {
             type : 'category',
-            data : ['1','2','3','4','5','6','7','8','9','10','11','12']
+            data : ['Round 1','Round 2','Round 3','Round 4', 'Round 5', 'Round 6']
         }
     ],
     yAxis : [
@@ -41,7 +41,7 @@ option = {
         {
             name:'Player1',
             type:'bar',
-            data:[2.0, 4.9, 7.0, 23.2, 25.6, 76.7, 135.6, 162.2, 32.6, 20.0, 6.4, 3.3],
+            data:[1,4,3,1,2,5],
             markPoint : {
                 data : [
                     {type : 'max', name: 'High'},
@@ -57,7 +57,55 @@ option = {
         {
             name:'Player2',
             type:'bar',
-            data:[2.6, 5.9, 9.0, 26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 18.8, 6.0, 2.3],
+            data:[2,3,2,1,4,3],
+            markPoint : {
+                data : [
+                    {name : 'Average', value : 182.2, xAxis: 7, yAxis: 183},
+                    {name : 'Average', value : 2.3, xAxis: 11, yAxis: 3}
+                ]
+            },
+            markLine : {
+                data : [
+                    {type : 'average', name : 'Average'}
+                ]
+            }
+        },
+        {
+            name:'Player3',
+            type:'bar',
+            data:[5,1,4,2,3,2],
+            markPoint : {
+                data : [
+                    {name : 'Average', value : 182.2, xAxis: 7, yAxis: 183},
+                    {name : 'Average', value : 2.3, xAxis: 11, yAxis: 3}
+                ]
+            },
+            markLine : {
+                data : [
+                    {type : 'average', name : 'Average'}
+                ]
+            }
+        },
+        {
+            name:'Player4',
+            type:'bar',
+            data:[3,3,2,3,3,3],
+            markPoint : {
+                data : [
+                    {name : 'Average', value : 182.2, xAxis: 7, yAxis: 183},
+                    {name : 'Average', value : 2.3, xAxis: 11, yAxis: 3}
+                ]
+            },
+            markLine : {
+                data : [
+                    {type : 'average', name : 'Average'}
+                ]
+            }
+        },
+        {
+            name:'Player5',
+            type:'bar',
+            data:[1,2,3,4,5,1],
             markPoint : {
                 data : [
                     {name : 'Average', value : 182.2, xAxis: 7, yAxis: 183},
