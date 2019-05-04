@@ -22,6 +22,22 @@ var itemThree = 2;
 var answers = [];
 var questionsAnswered = 0;
 
+function getValue(str) {
+    var answerMe = str;
+    answers.push(answerMe);
+    questionsAnswered++;
+    var lengthy = Object.keys(questions).length;
+    console.log(lengthy);
+    if(questionsAnswered === lengthy){
+        checkAnswers();
+    }
+    else {
+
+        showQuestion();
+    }
+
+}
+
 function showQuestion()
 {
         document.getElementById("buttonOne").value = questions[i][itemOne];
@@ -33,32 +49,37 @@ function showQuestion()
         three = document.getElementById("opThree").innerHTML = questions[i][itemThree];
         i++;
 }
-window.onload = function ()
-    {
-            showQuestion();
-    };
 
-function getValue(str) {
-    answers.push(str);
-    questionsAnswered ++;
-    console.log(questionsAnswered);
-    var lengthy = Object.keys(questions).length;
-    console.log(lengthy);
-    if(questionsAnswered === questions.length){
-        document.getElementById("counting").innerText = "No more questions";
-        checkAnswers();
-    }
-    else {
-        showQuestion();
-    }
-
-}
 function checkAnswers() {
     var countedAnswers = 0;
-    for( var counter = 0; counter <= questionArray.length; counter++){
-        if(answers[counter] === questions[counter][3]){
-            countedAnswers++;
+        console.log("hello");
+        var questionArraySize = questionArray.length;
+        for( var counter = 0; counter <= questionArraySize; counter++){
+            if(answers[counter] === questions[counter][3]){
+                countedAnswers++;
+            }
         }
-    }
+
+    var contOne = document.getElementById("cContainer");
+    contOne.parentNode.removeChild(contOne);
+    var contTwo = document.getElementById("aContainer");
+    contTwo.parentNode.removeChild(contTwo);
+    two.innerHTML = countedAnswers;
+    console.log(countedAnswers);
 }
+
+window.onload = function ()
+    {
+        var page = document.location.href;
+        if(questionsAnswered === 5){
+            checkAnswers();
+        }
+        else {
+            showQuestion();
+        }
+
+    };
+
+
+
 
