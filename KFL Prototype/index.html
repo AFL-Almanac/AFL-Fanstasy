@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <!--[if IE 7 ]>  <html lang="en-gb" class="isie ie7 oldie no-js"> <![endif]-->
 <!--[if IE 8 ]>  <html lang="en-gb" class="isie ie8 oldie no-js"> <![endif]-->
@@ -58,7 +58,7 @@
 						<!-- extra nav -->
 						<div class="extra-nav">
 							<div class="extra-cell">
-								<button id="quik-search-btn" type="button" onclick="location.href='User.html'" class="site-button">Login</button>
+								<button id="quik-search-btn" type="button" href='#' data-toggle="modal" data-target="#modalLoginForm"class="site-button">Login</button>
 							</div>
 						</div>
 						<!-- Quik search -->
@@ -689,6 +689,138 @@
     <!-- Footer END-->
     <!-- scroll top button -->
     <button class="scroltop fa fa-caret-up" ></button>
+
+
+    <!-- Login Modal Start -->
+    <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true">
+
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header text-center">
+                <h4 class="modal-title w-100 font-weight-bold">Sign in</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+            <div class="modal-body mx-3">
+                <form class="/login_user" method="post" action="User.html" id="loginForm">
+
+
+                    <div class="md-form mb-5">
+                        <div id="errorMessage" style="color:red; display:none">
+
+                        </div>
+
+                        <i class="fa fa-envelope prefix grey-text"></i>
+                        <input type="email" id="defaultForm-email" name="email" class="form-control validate"
+                               placeholder="Your Email">
+
+                    </div>
+
+                    <div class="md-form mb-4">
+                        <i class="fa fa-lock prefix grey-text"></i>
+                        <input type="password" id="defaultForm-pass2" name="password" class="form-control validate"
+                               placeholder="Your Password">
+
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center">
+                        <button class="btn btn-default">Login</button>
+                        <button class="btn btn-default" data-dismiss="modal" data-toggle="modal"
+                                data-target="#exampleModal">Register
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+    <div class="modal-dialog" role="document">
+        <div class="modal-content" style="max-height: 500px; overflow-y: scroll">
+            <div class="modal-header text-center">
+                <h4 class="modal-title w-100 font-weight-bold">Sign in</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+            <div class="modal-body mx-3">
+                <form class="/login_user" method="post" action="User.html" id="signupform">
+
+
+                    <div class="md-form mb-5">
+                        <div id="errorMessage" style="color:red; display:none">
+
+                        </div>
+
+                        <i class="fa fa-envelope prefix grey-text"></i>
+                        <input type="email" id="defaultForm-email2" class="form-control validate" name="email"
+                               placeholder="Your Email">
+
+                    </div>
+
+                    <div class="md-form mb-4">
+                        <i class="fa fa-lock prefix grey-text"></i>
+                        <input type="password" id="defaultForm-pass" class="form-control validate" name="password"
+                               placeholder="Your Password">
+
+                    </div>
+                    <div class="md-form mb-4">
+                        <i class="fa fa-lock prefix grey-text"></i>
+                        <input type="password" id="defaultForm-pass1" class="form-control validate" name="cpass"
+                               placeholder="Confirm Password">
+
+                    </div>
+
+                    <div class="md-form mb-4">
+                        <i class="fa fa-user"></i>
+                        <input type="text" class="form-control validate" name="uname" placeholder="Username">
+
+                    </div>
+
+                    <div class="md-form mb-4">
+                        <i class="fa fa-users"></i>
+                        <input type="text" class="form-control validate" name ="tname"placeholder="Team name">
+
+                    </div>
+
+                    <div class="md-form mb-4">
+                        <i class="fa fa-birthday-cake grey-text"></i>
+                        <input type="text" id="datepicker" class="form-control validate" name="bday"
+                               placeholder="Birthday">
+
+                    </div>
+
+                    <div class="dropdown">
+
+                        <select class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+                        </select>
+
+
+                    </div>
+                    <br>
+                    <div class="modal-footer d-flex justify-content-center">
+                        <button class="btn btn-default" data-dismiss="modal" data-toggle="modal"
+                                data-target="#modalLoginForm">Login
+                        </button>
+                        <button class="btn btn-default">Register</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Login Modal END -->
+
 </div>
 <div id="loading-area"></div>
 <!-- JavaScript  files ========================================= -->
