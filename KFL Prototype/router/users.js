@@ -21,7 +21,7 @@ router.post('/sign_up', async (req, res) => {
 })
 
 //user login
-router.post('/users/login', async (req,res) => {
+router.post('/login_user', async (req,res) => {
     
     try {
         const user = await User.findByCredentials(req.param('email'), req.body.password)

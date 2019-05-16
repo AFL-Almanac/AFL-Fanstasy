@@ -3,6 +3,7 @@ require('./db/mongoose')
 const routerUser = require('./router/users')
 const routerTask = require('./router/tasks')
 const bcrypt = require('bcryptjs')
+var path = require('path');
 
 const app = express()
 const port = process.env.PORT || 3000
@@ -11,6 +12,11 @@ const port = process.env.PORT || 3000
 app.use(express.json())
 app.use(routerUser)
 app.use(routerTask)
+
+app.use(express.static(__dirname + '/public'));
+app.get('/', function (req, res) {
+    res.sendFile(path.join(__dirname + '/index.html'));
+});
 
 
 app.listen(port, () => {
