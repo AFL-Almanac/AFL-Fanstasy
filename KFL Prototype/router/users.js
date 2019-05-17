@@ -8,7 +8,7 @@ router.post('/sign_up', async (req, res) => {
     user.email = req.body.email
     user.password = req.body.password
     user.tname = req.body.tname
-    user.name = req.body.uname
+    user.uname = req.body.uname
 
     try {
         const token = await user.generateAuthToken()
@@ -18,6 +18,18 @@ router.post('/sign_up', async (req, res) => {
         res.status(400).send(e)
     }
 
+})
+router.post('/logout', auth, async (req, res) => {
+
+    try{
+        req.user.tokens = req.user.tokens.filter((token) => {
+            return token.token !== req.token
+        })
+
+        await req.user.save()
+    }catch(e){
+        res.status(500).send()
+    }   
 })
 
 //user login

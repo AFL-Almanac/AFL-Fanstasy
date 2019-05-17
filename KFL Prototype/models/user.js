@@ -24,7 +24,11 @@ const userSchema = new mongoose.Schema({
         trim:true,
         min: 8,
         max:24
-    },tokens: [{
+    },
+    uname:{
+        type: String
+    },
+    tokens: [{
         token:{
             type:String,
             required:true
