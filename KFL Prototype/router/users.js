@@ -33,7 +33,7 @@ router.post('/logout', auth, async (req, res) => {
 })
 
 //user login
-router.post('/login_user', async (req,res) => {
+router.post('/users/login', async (req,res) => {
     
     try {
         const user = await User.findByCredentials(req.param('email'), req.body.password)
