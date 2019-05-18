@@ -2,6 +2,7 @@ const express = require("express");
 const router = new express.Router();
 const auth = require("../middleware/Auth");
 const User = require("../models/user");
+const path = require("path");
 
 router.post("/users/sign_up", async (req, res) => {
   const user = new User();
@@ -15,6 +16,7 @@ router.post("/users/sign_up", async (req, res) => {
     const token = await user.generateAuthToken();
     await user.save();
     res.status(201).send({ user, token });
+    res.sendFile(path.join(__dirname + "/User.html"));
   } catch (e) {
     res.status(400).send(e);
   }
@@ -34,16 +36,22 @@ router.post("/logout", auth, async (req, res) => {
 
 //user login
 router.post("/users/login_user", async (req, res) => {
+  let user;
   try {
-    const user = await User.findByCredentials(
-      req.body.email,
-      req.body.password
-    );
+    user = await User.findByCredentials(req.body.email, req.body.password);
+    res.status(200).send();
+  } catch (error) {
+    // handle unauthorised
+    res.status(401).send();
+    return;
+  }
 
+  try {
     const token = await user.generateAuthToken();
     res.send({ user, token });
   } catch (e) {
-    res.status(400).send();
+    console.log(e);
+    res.status(500).send();
   }
 });
 
