@@ -751,7 +751,7 @@
             </div>
 
             <div class="modal-body mx-3">
-                <form class="/login_user" method="post" action="User.html" id="signupform">
+                <form class="/sign_up" method="post" action="User.html" id="signupform">
 
 
                     <div class="md-form mb-5">
@@ -771,41 +771,22 @@
                                placeholder="Your Password">
 
                     </div>
-                    <div class="md-form mb-4">
-                        <i class="fa fa-lock prefix grey-text"></i>
-                        <input type="password" id="defaultForm-pass1" class="form-control validate" name="cpass"
-                               placeholder="Confirm Password">
 
-                    </div>
+                    <!--<div class="md-form mb-4">-->
+                        <!--<i class="fa fa-user"></i>-->
+                        <!--<input type="text" class="form-control validate" name="uname" placeholder="Username">-->
 
-                    <div class="md-form mb-4">
-                        <i class="fa fa-user"></i>
-                        <input type="text" class="form-control validate" name="uname" placeholder="Username">
-
-                    </div>
+                    <!--</div>-->
 
                     <div class="md-form mb-4">
                         <i class="fa fa-users"></i>
-                        <input type="text" class="form-control validate" name ="tname"placeholder="Team name">
+                        <input type="text" class="form-control validate" name ="tname" id="tname" placeholder="Team name">
 
                     </div>
 
-                    <div class="md-form mb-4">
-                        <i class="fa fa-birthday-cake grey-text"></i>
-                        <input type="text" id="datepicker" class="form-control validate" name="bday"
-                               placeholder="Birthday">
-
-                    </div>
-
-                    <div class="dropdown">
-
-                        <select class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-
-                        </select>
 
 
-                    </div>
+
                     <br>
                     <div class="modal-footer d-flex justify-content-center">
                         <button class="btn btn-default" data-dismiss="modal" data-toggle="modal"
@@ -824,7 +805,9 @@
 </div>
 <div id="loading-area"></div>
 <!-- JavaScript  files ========================================= -->
+	
 <script src="js/jquery.min.js"></script><!-- JQUERY.MIN JS -->
+<script src="js/main.js"></script>
 <script src="plugins/bootstrap/js/popper.min.js"></script><!-- BOOTSTRAP.MIN JS -->
 <script src="plugins/bootstrap/js/bootstrap.min.js"></script><!-- BOOTSTRAP.MIN JS -->
 <script src="plugins/bootstrap-select/bootstrap-select.min.js"></script><!-- FORM JS -->
@@ -860,6 +843,13 @@ jQuery(document).ready(function() {
 	'use strict';
 	dz_rev_slider_1();
 });	/*ready*/
+
+// $("#signupform").submit(function (event) {
+// 	$.post('/sign_up', $("#signupform").serialize(), function (data) {
+//
+// 	});
+// 	event.preventDefault();
+// });
 </script>
 
 </body>
