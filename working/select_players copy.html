@@ -261,7 +261,7 @@
                 		<div class="dez-bnr-inr-entry">
                     			
 					
-					<div id="drop-target" style="margin-bottom: 5vh; margin-left: 14vh">
+					<div id="drop-target" ondrop="drop(event)" ondragover="allowDrop(event)" style="margin-bottom: 5vh; margin-left: 14vh">
     					</div>
 					<div id="drop-target" style="margin-bottom: 5vh; margin-left: 5vh">
     					</div>
@@ -318,7 +318,118 @@
 			</div>
 
 
-       <div class="topbar-divider "></div>
+       <div class="topbar-divider-large"></div>
+
+
+
+
+      <div class="col-xl-5 col-md-6 mb-4 mt-5">
+      <div class="card">       
+        <div class="card-body">                   
+            <h2 class="card-title text-info">Select Players</h5>
+            <div class="bottombar-divider"></div>
+            <div class="scrollable">
+              <ul class="social-line text-left pull-left"  >
+            
+                    <li class="mb-1">
+                       <div class="card border-left-primary shadow h-100" >
+                          <div class="card-body">
+                              <div class="row">
+                                <img class="img-profile rounded-circle" src="images\profile.png" >
+
+                                <div class="col mr-2">
+                                  <span class="text-xs mb-0 font-weight-bold text-primary text-gray-800">Melbourne Football Club</span>
+                                  <div class="h7 mb-0 mr-3 font-weight-bold text-secondary">Faiq Ch</div>
+                                  <div class="h7 mb-0 mr-3 font-weight-bold text-secondary">Points: 150</div>
+                                </div>
+
+                              </div>
+                          </div>
+                        </div>
+                     </li>
+
+
+                    <li class="mb-1">
+                        <div class="card border-left-primary shadow h-100">
+                          <div class="card-body">
+                              <div class="row">
+                                <img class="img-profile rounded-circle" src="images\profile.png">
+
+                                <div class="col mr-2">
+                                  <span class="text-xs mb-0 font-weight-bold text-primary text-gray-800">Melbourne Football Club</span>
+                                  <div class="h7 mb-0 mr-3 font-weight-bold text-secondary">Faiq Ch</div>
+                                  <div class="h7 mb-0 mr-3 font-weight-bold text-secondary">Points: 150</div>
+                                </div>
+
+                              </div>
+                          </div>
+                        </div>
+                     </li>
+
+
+                    <li class="mb-1">
+                        <div class="card border-left-primary shadow h-100">
+                          <div class="card-body">
+                              <div class="row">
+                                <img class="img-profile rounded-circle" src="images\profile.png">
+
+                                <div class="col mr-2">
+                                  <span class="text-xs mb-0 font-weight-bold text-primary text-gray-800">Melbourne Football Club</span>
+                                  <div class="h7 mb-0 mr-3 font-weight-bold text-secondary">Faiq Ch</div>
+                                  <div class="h7 mb-0 mr-3 font-weight-bold text-secondary">Points: 150</div>
+                                </div>
+
+                              </div>
+                          </div>
+                        </div>
+                     </li>
+
+
+                    <li class="mb-1">
+                        <div class="card border-left-primary shadow h-100">
+                          <div class="card-body">
+                              <div class="row">
+                                <img class="img-profile rounded-circle" src="images\profile.png">
+
+                                <div class="col mr-2">
+                                  <span class="text-xs mb-0 font-weight-bold text-primary text-gray-800">Melbourne Football Club</span>
+                                  <div class="h7 mb-0 mr-3 font-weight-bold text-secondary">Faiq Ch</div>
+                                  <div class="h7 mb-0 mr-3 font-weight-bold text-secondary">Points: 150</div>
+                                </div>
+
+                              </div>
+                          </div>
+                        </div>
+                     </li>
+
+                   
+              </ul>
+
+            </div>
+        </div>
+    </div>
+  </div>
+
+
+   <div class="card border-left-primary shadow h-100" id="drag1"  draggable="true" ondragstart="drag(event)">
+                          <div class="card-body">
+                              <div class="row">
+                                <img class="img-profile rounded-circle" src="images\profile.png">
+
+                                <div class="col mr-2">
+                                  <span class="text-xs mb-0 font-weight-bold text-primary text-gray-800">Melbourne Football Club</span>
+                                  <div class="h7 mb-0 mr-3 font-weight-bold text-secondary">Faiq Ch</div>
+                                  <div class="h7 mb-0 mr-3 font-weight-bold text-secondary">Points: 150</div>
+                                </div>
+
+                              </div>
+                          </div>
+                        </div>
+
+  
+   <div id="drop-target2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+
 
       </div>
 
@@ -489,6 +600,8 @@
 <script src="plugins/owl-carousel/owl.carousel.js"></script><!-- OWL SLIDER -->
 <script src="js/dz.ajax.js"></script><!-- CONTACT JS  -->
 
+<script src="dist/dragula.min.js"></script>
+<script src="dist/dragula.js"></script>
 <script src="js/custom.js"></script><!-- CUSTOM FUCTIONS  -->
 <script src="js/dz.carousel.js"></script><!-- SORTCODE FUCTIONS  -->
     <script src="../vendors/fastclick/lib/fastclick.js"></script>
@@ -519,16 +632,33 @@
 
        </script>
 
-	<script type="text/javascript">
-        $(init);
 
-        function init() {
-            $(".droppable-area1, .droppable-area2").sortable({
-                connectWith: ".connected-sortable",
-                stack: '.connected-sortable ul'
-            }).disableSelection();
-        }
-    </script>
+
+    <script>
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+
+
+   let res = document.getElementById(data).innerHTML;
+let div = document.createElement('div');
+div.innerHTML = res;
+let selected = div.getElementsByClassName('img-profile rounded-circle');
+alert(selected[0]);
+
+
+  ev.target.appendChild(selected[0]);
+}
+</script>
+
 
 <div id="loading-area"></div>
 
