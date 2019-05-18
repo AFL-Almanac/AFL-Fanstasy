@@ -3,90 +3,6 @@
 <html lang="en">
 
 
-<style>
-
-.left {
-  float: left;
-  position: relative;
-  width: 50%;
-  height: 100%;
-}
-
-.right {
-  float: left;
-  position: relative;
-  width: 40%;
-  margin-left: 5%;
-  height: 100%;
-}
-
-#drag-elements {
-  float: left;
-  display: block;
-  background-color: #dfdfdf;
-  border-radius: 5px;
-  margin-left: 5%;
-  height: 80vh;
-  width: 50vh;
-}
-
-#drag-elements > div {
-  text-align: center;
-  float: left;
-  padding: 1em;
-  margin: 0 1em 1em 0;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
-  border-radius: 100px;
-  border: 2px solid #ececec;
-  background: #F7F7F7;
-  transition: all .5s ease;
-}
-
-#drag-elements > div:active {
-  -webkit-animation: wiggle 0.3s 0s infinite ease-in;
-  animation: wiggle 0.3s 0s infinite ease-in;
-  opacity: .6;
-  border: 2px solid #000;
-}
-
-#drag-elements > div:hover {
-  border: 2px solid gray;
-  background-color: #e5e5e5;
-}
-
-#drop-target {
-  border: 2px dashed #D9D9D9;
-  border-radius: 5px;
-  height: 20px;
-  width:20px;
-  padding: 2em;
-  float: left;
-  display: block;
-  text-align: center;
-}
-
-#drop-target > div {
-  transition: all .5s;
-  text-align: center;
-  float: left;
-  padding: 1em;
-  margin: 0 1em 1em 0;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
-  border-radius: 5px;
-  border: 2px solid skyblue;
-  background: #F7F7F7;
-  transition: all .5s ease;
-}
-
-#drop-target > div:active {
-  -webkit-animation: wiggle 0.3s 0s infinite ease-in;
-  animation: wiggle 0.3s 0s infinite ease-in;
-  opacity: .6;
-  border: 2px solid #000;
-}
-
-</style>
-
 <script>
 	function hidefunction() {
         var y = document.getElementById("container");
@@ -133,20 +49,36 @@
 				<div class="top-bar">
             <div class="container">
               <div class="row top-bar-crve justify-content-between">
-                <div class="dez-topbar-left">
+                <div class="dez-topbar-left mt-2 mb-2">
                   <ul class="social-line text-center pull-right">
-                    <li><a href="javascript:void(0);"><i class="fa fa-envelope-o"></i> <span> Companyname@mail.com </span> </a></li>
-                    <li><a href="javascript:void(0);"><i class="fa fa-phone"></i> <span> (732) 803-010-03 </span> </a></li>
+                    <li class="ml-3"><img src="images/clubs-logo/Brisbane.png" height="30px" width="30px"></li>
+                    <li class="ml-3"><img src="images/clubs-logo/Collingwood.png" height="30px" width="30px"></li>
+                    <li class="ml-3"><img src="images/clubs-logo/adelade.png" height="30px" width="30px"></li>
+                    <li class="ml-3"><img src="images/clubs-logo/west.png" height="30px" width="30px"></li>
+                    <li class="ml-3"><img src="images/clubs-logo/Melbourne.png" height="30px" width="30px"></li>
+                    <li class="ml-3"><img src="images/clubs-logo/Brisbane.png" height="30px" width="30px"></li>
+                    <li class="ml-3"><img src="images/clubs-logo/Collingwood.png" height="30px" width="30px"></li>
+                    <li class="ml-3"><img src="images/clubs-logo/adelade.png" height="30px" width="30px"></li>
+                    <li class="ml-3"><img src="images/clubs-logo/west.png" height="30px" width="30px"></li>
+                    <li class="ml-3"><img src="images/clubs-logo/Melbourne.png" height="30px" width="30px"></li>
+                    <li class="ml-3"><img src="images/clubs-logo/Brisbane.png" height="30px" width="30px"></li>
+                    <li class="ml-3"><img src="images/clubs-logo/Collingwood.png" height="30px" width="30px"></li>
+                    <li class="ml-3"><img src="images/clubs-logo/adelade.png" height="30px" width="30px"></li>
+                    <li class="ml-3"><img src="images/clubs-logo/west.png" height="30px" width="30px"></li>
+                    <li class="ml-3"><img src="images/clubs-logo/Melbourne.png" height="30px" width="30px"></li>
+                    <li class="ml-3"><img src="images/clubs-logo/Brisbane.png" height="30px" width="30px"></li>
+                    <li class="ml-3"><img src="images/clubs-logo/Collingwood.png" height="30px" width="30px"></li>
+                    <li class="ml-3"><img src="images/clubs-logo/adelade.png" height="30px" width="30px"></li>
+                    <li class="ml-3"><img src="images/clubs-logo/west.png" height="30px" width="30px"></li>
+                    <li class="ml-3"><img src="images/clubs-logo/Melbourne.png" height="30px" width="30px"></li>
+                    <li class="ml-3"><img src="images/clubs-logo/Brisbane.png" height="30px" width="30px"></li>
+                    <li class="ml-3"><img src="images/clubs-logo/Collingwood.png" height="30px" width="30px"></li>
+                    <li class="ml-3"><img src="images/clubs-logo/adelade.png" height="30px" width="30px"></li>
+                    <li class="ml-3"><img src="images/clubs-logo/west.png" height="30px" width="30px"></li>
+                    <li class="ml-3"><img src="images/clubs-logo/Melbourne.png" height="30px" width="30px"></li>
                   </ul>
                 </div>                        
-                <div class="dez-topbar-right ">
-                  <ul class="social-line text-center pull-right">
-                    <li><a href="javascript:void(0);" class="fa fa-facebook"></a></li>
-                    <li><a href="javascript:void(0);" class="fa fa-twitter"></a></li>
-                    <li><a href="javascript:void(0);" class="fa fa-linkedin"></a></li>
-                    <li><a href="javascript:void(0);" class="fa fa-google-plus"></a></li>
-                  </ul>
-                </div>
+               
               </div>
             </div>
           </div>
@@ -155,7 +87,7 @@
 					<div class="container clearfix">
 
 						<!-- website logo -->
-						<div class="logo-header mostion"><a href="index.html"><img src="images/KFLLogo.png" width="193" height="89" alt=""></a></div>
+            <div class="logo-header mostion "><a href="index.html"><img src="images/KFLLogo.png" width="193" height="89" alt=""></a></div>
 						<!-- nav toggle button -->
 						<button class="navbar-toggler collapsed navicon justify-content-end" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 							<span></span>
@@ -187,9 +119,7 @@
 	<!-- header END -->
     <!-- Content -->
     <div class="page-content">
-        <!-- inner page banner -->
-        
-        <!-- inner page banner END -->
+      
          <!-- Latest Result -->
         <div class="section-full score-board bg-white p-t70 ">
             <div class="container">
@@ -199,17 +129,17 @@
                             <h2 class="h2 text-uppercase">Latest Result</h2>
               <div class="dez-separator-outer "><div class="dez-separator bg-primary style-liner"></div></div>
                             <div class="clear"></div>
-                            <p class="m-b0">Lorem Ipsum is simply dummy text of the printing and typesetting industry has been the industry's standard dummy text ever since the been when an unknown printer.</p>
+                            <p class="m-b0">The reigning premiers scraped together a 16-point win to break the hearts of Melbourne fans at Optus Stadium on Friday night. They trailed the Demons at every break, but four goals from Josh Kennedy and a defensive masterclass from Shannon Hurn got them over the line, 13.7 (85) to 9.15 (69)</p>
                         </div>    
           </div>    
           <div class="row">
             <div class="col-lg-5 col-md-5">
               <div class="team-box-left clearfix">
                 <div class="player pull-right">
-                  <img src="images/team-1.png" alt=""/>
+                  <img src="images/player1.png" alt=""/>
                 </div>
                 <div class="team-result text-white text-left">
-                  <h3 class="text-uppercase font-weight-600 m-a0">England</h3>
+                  <h3 class="text-uppercase font-weight-600 m-a0">West Cost Eagles</h3>
                   <div class="m-tb5"><span class="text-green">WIN</span></div>
                   <a href="#" class="site-button">Score Board</a>
                 </div>    
@@ -218,17 +148,17 @@
             <div class="col-lg-2 col-md-2 text-center p-lr0">
               <div class=" score-info">
                 <span class="vs">V/S</span> 
-                <span class="score">5-2</span>
-                <p>May 16,2015 15:30pm Wbeysley Stadium (london)</p>
+                <span class="score">85-69</span>
+                <p>May 11,2019 15:30pm Optus Stadium (Burswood, Western Australia)</p>
               </div>  
             </div>
             <div class="col-lg-5 col-md-5">
               <div class="team-box-right clearfix">
                 <div class="player pull-left">
-                  <img src="images/team-2.png"  alt=""/>
+                  <img src="images/player2.png"  alt=""/>
                 </div>
                 <div class="team-result text-white text-right">
-                  <h3 class="text-uppercase font-weight-600 m-a0">England</h3>
+                  <h3 class="text-uppercase font-weight-600 m-a0">Melbourne</h3>
                   <div class="m-tb5"><span class="text-red">LOSS</span></div>
                   <a href="#" class="site-button">Score Board</a>
                 </div>    
@@ -239,83 +169,139 @@
             </div>
         </div>
         <!-- Latest Result END -->
-       
-        <!-- content area -->
 
-        <div class="content-area" style="height:100vh;" >
-           	<div class="container">
-		<div class="dez-bnr-inr" style="background-image:url(images/ground.png); width: 65vh; margin: 5vh; float:left;" >
+        <!-- User Info Starts -->
+        <div class="container-fluid">
 
-        		<div class="container">
-                		<div class="dez-bnr-inr-entry">
-                    			
-					
-					<div id="drop-target" style="margin-bottom: 5vh; margin-left: 14vh">
-    					</div>
-					<div id="drop-target" style="margin-bottom: 5vh; margin-left: 5vh">
-    					</div>
-					<div id="drop-target" style="margin-bottom: 5vh; margin-left: 5vh">
-    					</div>
+          <!-- Page Heading -->
+          
+             <div class="col-lg-12 text-center section-head mt-5">
+                <h2 class="h2 text-uppercase">Dashboard</h2>
+              <div class="dez-separator-outer ">
+                <div class="dez-separator bg-primary style-liner">
+                  
+                </div>
+              </div>
+              <div class="clear"></div>
+                          
+             </div>    
+           
 
-					
-					
+          <!-- Content Row -->
+          <div class="row">
 
-					<div id="drop-target" style="margin-bottom: 5vh; margin-left: 10vh">
-    					</div>
-					<div id="drop-target" style="margin-bottom: 5vh; margin-left: 5vh">
-    					</div>
-					<div id="drop-target" style="margin-bottom: 5vh; margin-left: 5vh">
-					</div>
-					<div id="drop-target" style="margin-bottom: 5vh; margin-left: 5vh">
-					</div>
-					
-					
+           
+            <div class="col-xl-12 mb-4">
+              <div class="card border-left-primary shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="row">
 
-					<div id="drop-target" style="margin-bottom: 5vh; margin-left: 10vh">
-    					</div>
-					<div id="drop-target" style="margin-bottom: 5vh; margin-left: 5vh">
-    					</div>
-					<div id="drop-target" style="margin-bottom: 5vh; margin-left: 5vh">
-					</div>
-					<div id="drop-target" style="margin-bottom: 5vh; margin-left: 5vh">
-					</div>
-					
+                      <img class="img-profile rounded-circle" src="images\profile.png">
 
+                      <div class="col mr-2">
+                        <span class="text-xs mb-0 font-weight-bold text-primary text-gray-800">Melbourne Football Club</span>
+                        <div class="h6 mb-0 mr-3 font-weight-bold text-secondary">Faiq Ch</div>
+                      </div>
 
-					<div id="drop-target" style="margin-bottom: 5vh; margin-left: 10vh">
-    					</div>
-					<div id="drop-target" style="margin-bottom: 5vh; margin-left: 5vh">
-    					</div>
-					<div id="drop-target" style="margin-bottom: 5vh; margin-left: 5vh">
-					</div>
-					<div id="drop-target" style="margin-bottom: 5vh; margin-left: 5vh">
-					</div>
+                      <div class="topbar-divider "></div>
 
-					
-					
+                      <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Round 9 Score</div>
+                        <div class="h6 mb-0 mr-3 font-weight-bold text-secondary">400</div>
+                      </div>
 
-					<div id="drop-target" style="margin-bottom: 5vh; margin-left: 14vh">
-    					</div>
-					<div id="drop-target" style="margin-bottom: 5vh; margin-left: 5vh">
-    					</div>
-					<div id="drop-target" style="margin-bottom: 5vh; margin-left: 5vh">
-    					</div>
-					
-                		</div>
-				
-			</div>
-			</div>
-			<div id="drag-elements"></div>
-			
-            	</div>
+                       <div class="topbar-divider "></div>
 
-		
-		
+                       <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Total Rounds</div>
+                      <div class="row no-gutters align-items-center">
+                        <div class="col-auto">
+                          <div class="h6 mb-0 mr-3 font-weight-bold text-secondary">9/23</div>
+                        </div>
+                        <div class="col">
+                          <div class="progress progress-sm mr-2">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 39%"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
 
+                       <div class="topbar-divider "></div>
 
-        </div>
-        <!-- content area  END -->
+                       <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">League Ranking</div>
+                      <div class="row no-gutters align-items-center">
+                        <div class="col-auto">
+                          <div class="h6 mb-0 mr-3 font-weight-bold text-secondary">5040/10437</div>
+                        </div>
+                        <div class="col">
+                          <div class="progress progress-sm mr-2">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 55%"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
     </div>
+ <!-- User Info ENDS -->
+
+
+<!-- Feature Selection Starts -->
+    <div class="container-fluid">
+
+      <div class="row h-100 justify-content-center align-items-center">
+           
+          
+            <div class="col-xl-3 col-md-2 mb-1">
+              <div class="card border-bottom-primary shadow h-100">
+              <img class="card-img-top" src="images/trends3.jpg" alt="Card image">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                       <h4 class="card-title">Trends</h4>
+                        <p class="card-text">See the Current Trends of the Players! You must choose a psoition (Defenders, Midfielders, Rucks and Forwards) for the extensive view</p>
+                        <a href="#" class="btn btn-info stretched-link">See Trends</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+             <div class="col-xl-3 col-md-2 mb-1" >
+              <div class="card border-bottom-primary shadow h-100">
+              <img class="card-img-top" src="images/slide3.jpg" alt="Card image" >
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                       <h4 class="card-title">Your Fantasy Team</h4>
+                        <p class="card-text">Play our famous salary cap game to win amazing prizes! You must select 18 players (3 Defenders, 8 Midfielders, 4 Rucks and 3 Forwards)</p>
+                        <a href="#" class="btn btn-info stretched-link">View Team</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+
+
+      </div>
+
+    </div>
+
+
+  </div>
     <!-- Content END-->
     <!-- Footer -->
 	<footer class="site-footer bg-color-2" >
