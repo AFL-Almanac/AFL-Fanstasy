@@ -66,7 +66,7 @@ function myFunction() {
       }
     }
 
-    function viewTrends() {
+    function viewQuiz() {
       
       var q = document.getElementById("QuizSelectionPage");
       var f = document.getElementById("FeatureSelection");
