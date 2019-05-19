@@ -98,18 +98,6 @@ function checkAnswers() {
 
 }
 
-window.onload = function ()
-    {
-
-        if(questionsAnswered === 5){
-            checkAnswers();
-        }
-        else {
-            showQuestion();
-        }
-
-    };
-
 
 
 

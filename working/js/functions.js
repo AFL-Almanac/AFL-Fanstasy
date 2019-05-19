@@ -1,11 +1,13 @@
 
 
-function hidefunction() {
-    
+function hidefunctions() {
+      
         var y = document.getElementById("container");
         var b = document.getElementById("BackButton");
         var p = document.getElementById("PlayerSelectionPage");
         var t = document.getElementById("TrendsSelectionPage");
+        var q = document.getElementById("QuizSelectionPage");
+        q.style.display = "none";
         y.style.display = "none";
         b.style.display = "none";
         p.style.display = "none";
@@ -13,21 +15,24 @@ function hidefunction() {
          
 }
 
-window.onload = hidefunction;
+
+window.onload = hidefunctions;
+
+
 
 function myFunction() {
           var x = document.getElementById("Positions");
           var y = document.getElementById("container");
           var b = document.getElementById("BackButton");
-      var c = document.getElementById("closeButton");
+          var c = document.getElementById("closeButton");
           if (x.style.display === "none") {
             x.style.display = "block";
-        c.style.display = "block";
+            c.style.display = "block";
             y.style.display = "none";
             b.style.display = "none";
           } else {
             x.style.display = "none";
-        c.style.display = "none";
+            c.style.display = "none";
             y.style.display = "block";
             b.style.display = "block";
 
@@ -71,13 +76,21 @@ function myFunction() {
       var q = document.getElementById("QuizSelectionPage");
       var f = document.getElementById("FeatureSelection");
 
-      if (t.style.display === "none") {
+      if (q.style.display === "none") {
         q.style.display = "block";
         f.style.display = "none";
+
+        if(questionsAnswered === 5){
+            checkAnswers();
+        }
+        else {
+            showQuestion();
+        }
         
       } else {
         q.style.display = "none";
         f.style.display = "block";
+        
 
       }
     }
