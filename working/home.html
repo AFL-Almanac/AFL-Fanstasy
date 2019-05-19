@@ -6,13 +6,14 @@
 <script>
 	function hidefunction() {
     
-       // var y = document.getElementById("container");
-        //var b = document.getElementById("BackButton");
+        var y = document.getElementById("container");
+        var b = document.getElementById("BackButton");
         var p = document.getElementById("PlayerSelectionPage");
-        //y.style.display = "none";
-
-        //b.style.display = "none";
+        var t = document.getElementById("TrendsSelectionPage");
+        y.style.display = "none";
+        b.style.display = "none";
         p.style.display = "none";
+        t.style.display = "none";
          
      }
 	window.onload = hidefunction;
@@ -481,7 +482,7 @@
                     <div class="col mr-2">
                        <h4 class="card-title">Trends</h4>
                         <p class="card-text">See the Current Trends of the Players! You must choose a psoition (Defenders, Midfielders, Rucks and Forwards) for the extensive view</p>
-                        <a href="#" class="btn btn-info stretched-link">See Trends</a>
+                        <a href="#" onclick="viewTrends()" class="btn btn-info stretched-link">See Trends</a>
                     </div>
                   </div>
                 </div>
@@ -511,9 +512,28 @@
 
 
   </div>
+
+    <div class="content-area m-4"  id="TrendsSelectionPage">
+           
+       
+
+           <button type="button" id="closeButton" onclick="viewTrends()" class="close" aria-label="Close">
+            <span aria-hidden="true" >&times;</span>
+          </button>
+
+           <div class="container-fluid" style="height: 70vh">
+
+           <div id="Positions" onclick="myFunction()" style="height: 100%"></div>
+           <div id="container" style="height: 100%"></div>
+           <button id="BackButton" style="float: right; width: 10%" type="button" class="site-button radius-xl" onclick="myFunction()">Back</button>
+
+           </div>
+
+        
+    </div>
     <!-- Content END-->
     <!-- Footer -->
-	<footer class="site-footer bg-color-2" >
+	<footer class="site-footer bg-color-2 mt-5" >
         <div class="footer-top">
             <div class="container">
                 <div class="row">
@@ -671,12 +691,15 @@
 		  var x = document.getElementById("Positions");
 		  var y = document.getElementById("container");
 		  var b = document.getElementById("BackButton");
+      var c = document.getElementById("closeButton");
 		  if (x.style.display === "none") {
 		    x.style.display = "block";
+        c.style.display = "block";
 		    y.style.display = "none";
 		    b.style.display = "none";
 		  } else {
 		    x.style.display = "none";
+        c.style.display = "none";
 		    y.style.display = "block";
 		    b.style.display = "block";
 
@@ -694,6 +717,22 @@
         
       } else {
         p.style.display = "none";
+        f.style.display = "block";
+
+      }
+    }
+
+     function viewTrends() {
+      
+      var t = document.getElementById("TrendsSelectionPage");
+      var f = document.getElementById("FeatureSelection");
+
+      if (t.style.display === "none") {
+        t.style.display = "block";
+        f.style.display = "none";
+        
+      } else {
+        t.style.display = "none";
         f.style.display = "block";
 
       }
