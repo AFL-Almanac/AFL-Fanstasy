@@ -66,6 +66,22 @@ function myFunction() {
       }
     }
 
+    function viewTrends() {
+      
+      var q = document.getElementById("QuizSelectionPage");
+      var f = document.getElementById("FeatureSelection");
+
+      if (t.style.display === "none") {
+        q.style.display = "block";
+        f.style.display = "none";
+        
+      } else {
+        q.style.display = "none";
+        f.style.display = "block";
+
+      }
+    }
+
     function allowDrop(ev) {
   ev.preventDefault();
 }
