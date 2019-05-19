@@ -87,8 +87,8 @@
   });
 
   $("#loginForm").submit(function(e) {
-    const $email = $("#defaultForm-email");
-    const $password = $("#defaultForm-pass2");
+    const $email = $("#defaultForm-email2");
+    const $password = $("#defaultForm-pass");
 
     var details = {
       email: $email.val(),
