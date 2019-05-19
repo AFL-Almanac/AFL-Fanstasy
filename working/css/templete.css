@@ -2945,28 +2945,24 @@ footer.site-footer.footer-overlay form {
 #drop-target {
   border: 2px dashed #D9D9D9;
   border-radius: 5px;
-  height: 50px;
-  width:50px;
-  padding: 2em;
-  float: left;
-  display: block;
-  text-align: center;
-}
-
-#drop-target2{
- border: 2px dashed #D9D9D9;
-  border-radius: 5px;
-  height: 200px;
-  width:200px;
-  padding: 2em;
+  height: 60px;
+  width:60px;
   float: left;
   
 }
 
-#drop-target2 > img{
- 
+#profile-img{
+
   height: 80px;
   width:80px;
+
+  
+}
+
+#drop-target > img{
+
+  height: 60px !important;
+  width:60px !important;
  
 
 }

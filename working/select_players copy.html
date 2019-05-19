@@ -263,53 +263,54 @@
 					
 					<div id="drop-target" ondrop="drop(event)" ondragover="allowDrop(event)" style="margin-bottom: 5vh; margin-left: 14vh">
     					</div>
-					<div id="drop-target" style="margin-bottom: 5vh; margin-left: 5vh">
+					<div id="drop-target" ondrop="drop(event)" ondragover="allowDrop(event)" style="margin-bottom: 5vh; margin-left: 5vh">
     					</div>
-					<div id="drop-target" style="margin-bottom: 5vh; margin-left: 5vh">
+					<div id="drop-target"  ondrop="drop(event)" ondragover="allowDrop(event)" style="margin-bottom: 5vh; margin-left: 5vh">
     					</div>
 
 					
 					
 
-					<div id="drop-target" style="margin-bottom: 5vh; margin-left: 10vh">
-    					</div>
-					<div id="drop-target" style="margin-bottom: 5vh; margin-left: 5vh">
-    					</div>
-					<div id="drop-target" style="margin-bottom: 5vh; margin-left: 5vh">
-					</div>
-					<div id="drop-target" style="margin-bottom: 5vh; margin-left: 5vh">
-					</div>
-					
-					
+					<div id="drop-target"  ondrop="drop(event)" ondragover="allowDrop(event)" style="margin-bottom: 5vh; margin-left: 10vh">
 
-					<div id="drop-target" style="margin-bottom: 5vh; margin-left: 10vh">
     					</div>
-					<div id="drop-target" style="margin-bottom: 5vh; margin-left: 5vh">
+					<div id="drop-target"  ondrop="drop(event)" ondragover="allowDrop(event)" style="margin-bottom: 5vh; margin-left: 5vh">
     					</div>
-					<div id="drop-target" style="margin-bottom: 5vh; margin-left: 5vh">
+					<div id="drop-target"  ondrop="drop(event)" ondragover="allowDrop(event)" style="margin-bottom: 5vh; margin-left: 5vh">
 					</div>
-					<div id="drop-target" style="margin-bottom: 5vh; margin-left: 5vh">
+					<div id="drop-target"  ondrop="drop(event)" ondragover="allowDrop(event)" style="margin-bottom: 5vh; margin-left: 5vh">
 					</div>
 					
+					
 
-
-					<div id="drop-target" style="margin-bottom: 5vh; margin-left: 10vh">
+					<div id="drop-target"  ondrop="drop(event)" ondragover="allowDrop(event)" style="margin-bottom: 5vh; margin-left: 10vh">
     					</div>
-					<div id="drop-target" style="margin-bottom: 5vh; margin-left: 5vh">
+					<div id="drop-target"  ondrop="drop(event)" ondragover="allowDrop(event)" style="margin-bottom: 5vh; margin-left: 5vh">
     					</div>
-					<div id="drop-target" style="margin-bottom: 5vh; margin-left: 5vh">
+					<div id="drop-target"  ondrop="drop(event)" ondragover="allowDrop(event)" style="margin-bottom: 5vh; margin-left: 5vh">
 					</div>
-					<div id="drop-target" style="margin-bottom: 5vh; margin-left: 5vh">
+					<div id="drop-target"  ondrop="drop(event)" ondragover="allowDrop(event)" style="margin-bottom: 5vh; margin-left: 5vh">
+					</div>
+					
+
+
+					<div id="drop-target"  ondrop="drop(event)" ondragover="allowDrop(event)" style="margin-bottom: 5vh; margin-left: 10vh">
+    					</div>
+					<div id="drop-target"  ondrop="drop(event)" ondragover="allowDrop(event)" style="margin-bottom: 5vh; margin-left: 5vh">
+    					</div>
+					<div id="drop-target" ondrop="drop(event)" ondragover="allowDrop(event)" style="margin-bottom: 5vh; margin-left: 5vh">
+					</div>
+					<div id="drop-target"  ondrop="drop(event)" ondragover="allowDrop(event)" style="margin-bottom: 5vh; margin-left: 5vh">
 					</div>
 
 					
 					
 
-					<div id="drop-target" style="margin-bottom: 5vh; margin-left: 14vh">
+					<div id="drop-target" ondrop="drop(event)" ondragover="allowDrop(event)" style="margin-bottom: 5vh; margin-left: 14vh">
     					</div>
-					<div id="drop-target" style="margin-bottom: 5vh; margin-left: 5vh">
+					<div id="drop-target" ondrop="drop(event)" ondragover="allowDrop(event)" style="margin-bottom: 5vh; margin-left: 5vh">
     					</div>
-					<div id="drop-target" style="margin-bottom: 5vh; margin-left: 5vh">
+					<div id="drop-target" ondrop="drop(event)" ondragover="allowDrop(event)" style="margin-bottom: 5vh; margin-left: 5vh">
     					</div>
 					
                 		</div>
@@ -332,10 +333,10 @@
               <ul class="social-line text-left pull-left"  >
             
                     <li class="mb-1">
-                       <div class="card border-left-primary shadow h-100" >
+                       <div class="card border-left-primary shadow h-100" id="drag1"  draggable="true" ondragstart="drag(event)">
                           <div class="card-body">
                               <div class="row">
-                                <img class="img-profile rounded-circle" src="images\profile.png" >
+                                <img class="img-profile" src="images\player1.png" id="profile-img" >
 
                                 <div class="col mr-2">
                                   <span class="text-xs mb-0 font-weight-bold text-primary text-gray-800">Melbourne Football Club</span>
@@ -350,10 +351,10 @@
 
 
                     <li class="mb-1">
-                        <div class="card border-left-primary shadow h-100">
+                        <div class="card border-left-primary shadow h-100" id="drag2"  draggable="true" ondragstart="drag(event)">
                           <div class="card-body">
                               <div class="row">
-                                <img class="img-profile rounded-circle" src="images\profile.png">
+                                <img class="img-profile" src="images\profile.png" id="profile-img">
 
                                 <div class="col mr-2">
                                   <span class="text-xs mb-0 font-weight-bold text-primary text-gray-800">Melbourne Football Club</span>
@@ -368,10 +369,10 @@
 
 
                     <li class="mb-1">
-                        <div class="card border-left-primary shadow h-100">
+                        <div class="card border-left-primary shadow h-100" id="drag3"  draggable="true" ondragstart="drag(event)">
                           <div class="card-body">
                               <div class="row">
-                                <img class="img-profile rounded-circle" src="images\profile.png">
+                                <img class="img-profile" src="images\player2.png" id="profile-img">
 
                                 <div class="col mr-2">
                                   <span class="text-xs mb-0 font-weight-bold text-primary text-gray-800">Melbourne Football Club</span>
@@ -386,10 +387,28 @@
 
 
                     <li class="mb-1">
-                        <div class="card border-left-primary shadow h-100">
+                        <div class="card border-left-primary shadow h-100" id="drag4"  draggable="true" ondragstart="drag(event)">
                           <div class="card-body">
                               <div class="row">
-                                <img class="img-profile rounded-circle" src="images\profile.png">
+                                <img class="img-profile" src="images\player3.png" id="profile-img">
+
+                                <div class="col mr-2">
+                                  <span class="text-xs mb-0 font-weight-bold text-primary text-gray-800">Melbourne Football Club</span>
+                                  <div class="h7 mb-0 mr-3 font-weight-bold text-secondary">Faiq Ch</div>
+                                  <div class="h7 mb-0 mr-3 font-weight-bold text-secondary">Points: 150</div>
+                                </div>
+
+                              </div>
+                          </div>
+                        </div>
+                     </li>
+
+
+                    <li class="mb-1">
+                        <div class="card border-left-primary shadow h-100" id="drag4"  draggable="true" ondragstart="drag(event)">
+                          <div class="card-body">
+                              <div class="row">
+                                <img class="img-profile" src="images\player3.png" id="profile-img">
 
                                 <div class="col mr-2">
                                   <span class="text-xs mb-0 font-weight-bold text-primary text-gray-800">Melbourne Football Club</span>
@@ -411,23 +430,6 @@
   </div>
 
 
-   <div class="card border-left-primary shadow h-100" id="drag1"  draggable="true" ondragstart="drag(event)">
-                          <div class="card-body">
-                              <div class="row">
-                                <img class="img-profile rounded-circle" src="images\profile.png">
-
-                                <div class="col mr-2">
-                                  <span class="text-xs mb-0 font-weight-bold text-primary text-gray-800">Melbourne Football Club</span>
-                                  <div class="h7 mb-0 mr-3 font-weight-bold text-secondary">Faiq Ch</div>
-                                  <div class="h7 mb-0 mr-3 font-weight-bold text-secondary">Points: 150</div>
-                                </div>
-
-                              </div>
-                          </div>
-                        </div>
-
-  
-   <div id="drop-target2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 
 
 
@@ -634,7 +636,7 @@
 
 
 
-    <script>
+<script>
 function allowDrop(ev) {
   ev.preventDefault();
 }
@@ -649,13 +651,22 @@ function drop(ev) {
 
 
    let res = document.getElementById(data).innerHTML;
-let div = document.createElement('div');
-div.innerHTML = res;
-let selected = div.getElementsByClassName('img-profile rounded-circle');
-alert(selected[0]);
+  let div = document.createElement('div');
+  div.innerHTML = res;
+  let selected = div.getElementsByClassName('img-profile');
+
+  //ev.target.style.background="white";
+
+  if (selected[0]!= null){
+    ev.target.style.border="none";
+    ev.target.style.boxShadow="0 8px 6px -6px green";
+  }
+
+  //document.getElementById(data).style.display="none";
+
+    ev.target.appendChild(selected[0]);
 
 
-  ev.target.appendChild(selected[0]);
 }
 </script>
 

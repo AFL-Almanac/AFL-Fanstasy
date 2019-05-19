@@ -5,10 +5,15 @@
 
 <script>
 	function hidefunction() {
-        var y = document.getElementById("container");
-        var b = document.getElementById("BackButton");
-        y.style.display = "none";
-        b.style.display = "none";
+    
+       // var y = document.getElementById("container");
+        //var b = document.getElementById("BackButton");
+        var p = document.getElementById("PlayerSelectionPage");
+        //y.style.display = "none";
+
+        //b.style.display = "none";
+        p.style.display = "none";
+         
      }
 	window.onload = hidefunction;
 </script>
@@ -257,9 +262,212 @@
     </div>
  <!-- User Info ENDS -->
 
+<!-- Player Selection Starts -->
+      <div class="content-area" id="PlayerSelectionPage">
+        
+        <div class="container-fluid row h-100 justify-content-center">
+          <div class="col-xl-10 col-md-6 mb-4 ">
+              <div class="card border-bottom-primary shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+
+                      <button type="button" onclick="viewTeam()" class="close" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+
+                      <div class="row">
+    <div class="dez-bnr-inr" style="background-image:url(images/ground_final.png); width: 65vh;" >
+
+            <div class="container">
+                    <div class="dez-bnr-inr-entry">
+                          
+          
+          <div id="drop-target" ondrop="drop(event)" ondragover="allowDrop(event)" style="margin-bottom: 5vh; margin-left: 14vh">
+              </div>
+          <div id="drop-target" ondrop="drop(event)" ondragover="allowDrop(event)" style="margin-bottom: 5vh; margin-left: 5vh">
+              </div>
+          <div id="drop-target"  ondrop="drop(event)" ondragover="allowDrop(event)" style="margin-bottom: 5vh; margin-left: 5vh">
+              </div>
+
+          
+          
+
+          <div id="drop-target"  ondrop="drop(event)" ondragover="allowDrop(event)" style="margin-bottom: 5vh; margin-left: 10vh">
+
+              </div>
+          <div id="drop-target"  ondrop="drop(event)" ondragover="allowDrop(event)" style="margin-bottom: 5vh; margin-left: 5vh">
+              </div>
+          <div id="drop-target"  ondrop="drop(event)" ondragover="allowDrop(event)" style="margin-bottom: 5vh; margin-left: 5vh">
+          </div>
+          <div id="drop-target"  ondrop="drop(event)" ondragover="allowDrop(event)" style="margin-bottom: 5vh; margin-left: 5vh">
+          </div>
+          
+          
+
+          <div id="drop-target"  ondrop="drop(event)" ondragover="allowDrop(event)" style="margin-bottom: 5vh; margin-left: 10vh">
+              </div>
+          <div id="drop-target"  ondrop="drop(event)" ondragover="allowDrop(event)" style="margin-bottom: 5vh; margin-left: 5vh">
+              </div>
+          <div id="drop-target"  ondrop="drop(event)" ondragover="allowDrop(event)" style="margin-bottom: 5vh; margin-left: 5vh">
+          </div>
+          <div id="drop-target"  ondrop="drop(event)" ondragover="allowDrop(event)" style="margin-bottom: 5vh; margin-left: 5vh">
+          </div>
+          
+
+
+          <div id="drop-target"  ondrop="drop(event)" ondragover="allowDrop(event)" style="margin-bottom: 5vh; margin-left: 10vh">
+              </div>
+          <div id="drop-target"  ondrop="drop(event)" ondragover="allowDrop(event)" style="margin-bottom: 5vh; margin-left: 5vh">
+              </div>
+          <div id="drop-target" ondrop="drop(event)" ondragover="allowDrop(event)" style="margin-bottom: 5vh; margin-left: 5vh">
+          </div>
+          <div id="drop-target"  ondrop="drop(event)" ondragover="allowDrop(event)" style="margin-bottom: 5vh; margin-left: 5vh">
+          </div>
+
+          
+          
+
+          <div id="drop-target" ondrop="drop(event)" ondragover="allowDrop(event)" style="margin-bottom: 5vh; margin-left: 14vh">
+              </div>
+          <div id="drop-target" ondrop="drop(event)" ondragover="allowDrop(event)" style="margin-bottom: 5vh; margin-left: 5vh">
+              </div>
+          <div id="drop-target" ondrop="drop(event)" ondragover="allowDrop(event)" style="margin-bottom: 5vh; margin-left: 5vh">
+              </div>
+          
+                    </div>
+        
+      </div>
+      </div>
+
+
+       <div class="topbar-divider-large"></div>
+
+
+
+
+      <div class="col-xl-5 col-md-6 mb-4 mt-5">
+      <div class="card">       
+        <div class="card-body">                   
+            <h2 class="card-title text-info">Select Players</h5>
+            <div class="bottombar-divider"></div>
+            <div class="scrollable">
+              <ul class="social-line text-left pull-left"  >
+            
+                    <li class="mb-1">
+                       <div class="card border-left-primary shadow h-100" id="drag1"  draggable="true" ondragstart="drag(event)">
+                          <div class="card-body">
+                              <div class="row">
+                                <img class="img-profile" src="images\player1.png" id="profile-img" >
+
+                                <div class="col mr-2">
+                                  <span class="text-xs mb-0 font-weight-bold text-primary text-gray-800">Melbourne Football Club</span>
+                                  <div class="h7 mb-0 mr-3 font-weight-bold text-secondary">Faiq Ch</div>
+                                  <div class="h7 mb-0 mr-3 font-weight-bold text-secondary">Points: 150</div>
+                                </div>
+
+                              </div>
+                          </div>
+                        </div>
+                     </li>
+
+
+                    <li class="mb-1">
+                        <div class="card border-left-primary shadow h-100" id="drag2"  draggable="true" ondragstart="drag(event)">
+                          <div class="card-body">
+                              <div class="row">
+                                <img class="img-profile" src="images\profile.png" id="profile-img">
+
+                                <div class="col mr-2">
+                                  <span class="text-xs mb-0 font-weight-bold text-primary text-gray-800">Melbourne Football Club</span>
+                                  <div class="h7 mb-0 mr-3 font-weight-bold text-secondary">Faiq Ch</div>
+                                  <div class="h7 mb-0 mr-3 font-weight-bold text-secondary">Points: 150</div>
+                                </div>
+
+                              </div>
+                          </div>
+                        </div>
+                     </li>
+
+
+                    <li class="mb-1">
+                        <div class="card border-left-primary shadow h-100" id="drag3"  draggable="true" ondragstart="drag(event)">
+                          <div class="card-body">
+                              <div class="row">
+                                <img class="img-profile" src="images\player2.png" id="profile-img">
+
+                                <div class="col mr-2">
+                                  <span class="text-xs mb-0 font-weight-bold text-primary text-gray-800">Melbourne Football Club</span>
+                                  <div class="h7 mb-0 mr-3 font-weight-bold text-secondary">Faiq Ch</div>
+                                  <div class="h7 mb-0 mr-3 font-weight-bold text-secondary">Points: 150</div>
+                                </div>
+
+                              </div>
+                          </div>
+                        </div>
+                     </li>
+
+
+                    <li class="mb-1">
+                        <div class="card border-left-primary shadow h-100" id="drag4"  draggable="true" ondragstart="drag(event)">
+                          <div class="card-body">
+                              <div class="row">
+                                <img class="img-profile" src="images\player3.png" id="profile-img">
+
+                                <div class="col mr-2">
+                                  <span class="text-xs mb-0 font-weight-bold text-primary text-gray-800">Melbourne Football Club</span>
+                                  <div class="h7 mb-0 mr-3 font-weight-bold text-secondary">Faiq Ch</div>
+                                  <div class="h7 mb-0 mr-3 font-weight-bold text-secondary">Points: 150</div>
+                                </div>
+
+                              </div>
+                          </div>
+                        </div>
+                     </li>
+
+
+                    <li class="mb-1">
+                        <div class="card border-left-primary shadow h-100" id="drag4"  draggable="true" ondragstart="drag(event)">
+                          <div class="card-body">
+                              <div class="row">
+                                <img class="img-profile" src="images\player3.png" id="profile-img">
+
+                                <div class="col mr-2">
+                                  <span class="text-xs mb-0 font-weight-bold text-primary text-gray-800">Melbourne Football Club</span>
+                                  <div class="h7 mb-0 mr-3 font-weight-bold text-secondary">Faiq Ch</div>
+                                  <div class="h7 mb-0 mr-3 font-weight-bold text-secondary">Points: 150</div>
+                                </div>
+
+                              </div>
+                          </div>
+                        </div>
+                     </li>
+
+                   
+              </ul>
+
+            </div>
+        </div>
+    </div>
+  </div>
+
+
+
+
+
+      </div>
+
+
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
 
 <!-- Feature Selection Starts -->
-    <div class="container-fluid">
+    <div class="container-fluid" id="FeatureSelection">
 
       <div class="row h-100 justify-content-center align-items-center">
            
@@ -287,7 +495,7 @@
                     <div class="col mr-2">
                        <h4 class="card-title">Your Fantasy Team</h4>
                         <p class="card-text">Play our famous salary cap game to win amazing prizes! You must select 18 players (3 Defenders, 8 Midfielders, 4 Rucks and 3 Forwards)</p>
-                        <a href="#" class="btn btn-info stretched-link">View Team</a>
+                        <a href="#" onclick="viewTeam()" class="btn btn-info stretched-link">View Team</a>
                     </div>
                   </div>
                 </div>
@@ -458,7 +666,7 @@
        <script type="text/javascript" src = "bar.js"> </script>
        <script>
        	
-       	function myFunction() {
+       function myFunction() {
 		  var x = document.getElementById("Positions");
 		  var y = document.getElementById("container");
 		  var b = document.getElementById("BackButton");
@@ -474,18 +682,57 @@
 		  }
 		}
 
+    function viewTeam() {
+      
+      var p = document.getElementById("PlayerSelectionPage");
+      var f = document.getElementById("FeatureSelection");
+
+      if (p.style.display === "none") {
+        p.style.display = "block";
+        f.style.display = "none";
+        
+      } else {
+        p.style.display = "none";
+        f.style.display = "block";
+
+      }
+    }
+
        </script>
 
-	<script type="text/javascript">
-        $(init);
+	<script>
+function allowDrop(ev) {
+  ev.preventDefault();
+}
 
-        function init() {
-            $(".droppable-area1, .droppable-area2").sortable({
-                connectWith: ".connected-sortable",
-                stack: '.connected-sortable ul'
-            }).disableSelection();
-        }
-    </script>
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+
+
+   let res = document.getElementById(data).innerHTML;
+  let div = document.createElement('div');
+  div.innerHTML = res;
+  let selected = div.getElementsByClassName('img-profile');
+
+  //ev.target.style.background="white";
+
+  if (selected[0]!= null){
+    ev.target.style.border="none";
+    ev.target.style.boxShadow="0 8px 6px -6px green";
+  }
+
+  //document.getElementById(data).style.display="none";
+
+    ev.target.appendChild(selected[0]);
+
+
+}
+</script>
 
 <div id="loading-area"></div>
 
