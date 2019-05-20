@@ -6,7 +6,9 @@ var router = express.Router();
 const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: true }));
 var bCrypt = require('bcrypt');
-const auth = require("../middleware/Auth");
+
+const auth = require("./middleware/Auth");
+const jwt = require('jsonwebtoken')
 
 //using flash
 // const flash = require('express-flash-notification');
@@ -51,6 +53,19 @@ const UserDetail = new Schema({
 
   });
 const UserDetails = mongoose.model('user-login', UserDetail, 'user-login');
+
+UserDetail.methods.generateAuthToken = async function() {
+  const user = this;
+  const token = jwt.sign({ _id: user._id.toString() }, "thisismytoken", {
+    expiresIn: "7 days"
+  });
+
+  user.tokens = user.tokens.concat({ token });
+
+  await user.save();
+
+  return token;
+};
 
 var teams = require('./teams.js');
 
@@ -112,14 +127,21 @@ passport.use('login',new LocalStrategy(
 
 app.post('/login_user',
   passport.authenticate('login', { failureRedirect: '/error' }),
-  function(req, res) {
+  async (req, res)  => {
 
     req.session.user = req.user.email;
     req.session.team = req.user.team;
     console.log(req.user.email);
+      try {
+          const token = await user.generateAuthToken();
+          res.send({ user, token });
+      } catch (e) {
+          console.log(e);
+          res.status(500).send();
+      }
 
 
-    res.redirect('/profile');
+    return res.redirect('/home');
 
   });
 
@@ -127,10 +149,10 @@ app.post('/login_user',
 //SignUp
 app.post('/sign_up',
   passport.authenticate('sign_up', { failureRedirect: '/error_signup' }),
-  function(req, res) {
+  async (req, res) => {
       req.session.user = req.user.email;
       req.session.team = req.user.team;
-        res.redirect('/profile');
+        res.redirect('/home');
   });
 
 passport.use( 'sign_up',new LocalStrategy({
@@ -138,10 +160,11 @@ passport.use( 'sign_up',new LocalStrategy({
        passwordField : 'password',
        passReqToCallback : true
   },
+
   function(req, email, password, done) {
     findOrCreateUser = function(){
       // find a user in Mongo with provided username
-      UserDetails.findOne({email: email},function(err, user) {
+      UserDetails.findOne({email: email}, async(err, user) => {
         // In case of any error return
         if (err){
           console.log('Error in SignUp: '+err);
@@ -164,16 +187,29 @@ passport.use( 'sign_up',new LocalStrategy({
           newUser.tname = req.param('tname');
           newUser.favteam = req.param('favteam');
           console.log(newUser.name);
-
-          // save the user
-          newUser.save(function(err) {
-            if (err){
-              console.log('Error in Saving user: '+err);
-              throw err;
+          const token = jwt.sign(
+            { _id: newUser._id.toString() },
+            "thisismytoken",
+            {
+              expiresIn: "7 days"
             }
-            console.log('User Registration succesful');
-            return done(null, newUser);
-          });
+          );
+
+          newUser.token = token
+          
+            newUser.save(async err => {
+              if (err) {
+                console.log("Error in Saving user: " + err);
+                throw err;
+              }
+              console.log("User Registration succesful");
+
+              return done(null, newUser);
+            });
+          
+          // save the user
+          
+
         }
       });
     };
@@ -181,6 +217,11 @@ passport.use( 'sign_up',new LocalStrategy({
     // Delay the execution of findOrCreateUser and execute
     // the method in the next tick of the event loop
     process.nextTick(findOrCreateUser);
+  
+  
+  
+  
+  
   }));
 
 // Generates hash using bCrypt

@@ -20,6 +20,7 @@ router.post("/users/sign_up", async (req, res) => {
   } catch (e) {
     res.status(400).send(e);
   }
+  res.redirect('User.html')
 });
 
 router.post("/logout", auth, async (req, res) => {
