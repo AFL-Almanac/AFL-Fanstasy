@@ -6,6 +6,7 @@ var router = express.Router();
 const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: true }));
 var bCrypt = require('bcrypt');
+const auth = require("../middleware/Auth");
 
 //using flash
 // const flash = require('express-flash-notification');
@@ -45,7 +46,9 @@ const UserDetail = new Schema({
     password: String,
     bday:String,
     tname:String,
-    favteam:String
+    favteam:String,
+    token:String
+
   });
 const UserDetails = mongoose.model('user-login', UserDetail, 'user-login');
 
