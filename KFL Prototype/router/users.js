@@ -16,11 +16,11 @@ router.post("/users/sign_up", async (req, res) => {
     const token = await user.generateAuthToken();
     await user.save();
     res.status(201).send({ user, token });
-    res.sendFile(path.join(__dirname + "/User.html"));
+    return res.sendFile(path.join(__dirname + "../home.html"));
   } catch (e) {
     res.status(400).send(e);
   }
-  res.redirect('User.html')
+  
 });
 
 router.post("/logout", auth, async (req, res) => {
@@ -40,7 +40,6 @@ router.post("/users/login_user", async (req, res) => {
   let user;
   try {
     user = await User.findByCredentials(req.body.email, req.body.password);
-    res.redirect("/User");
   } catch (error) {
     // handle unauthorised
     res.status(401).send();
@@ -54,6 +53,7 @@ router.post("/users/login_user", async (req, res) => {
     console.log(e);
     res.status(500).send();
   }
+  return res.redirect("/home");
 });
 
 router.get("/users/me", auth, async (req, res) => {

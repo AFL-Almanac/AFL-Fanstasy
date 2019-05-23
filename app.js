@@ -6,6 +6,7 @@ var router = express.Router();
 const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: true }));
 var bCrypt = require('bcrypt');
+require("./db/mongoose");
 
 const auth = require("./middleware/Auth");
 const jwt = require('jsonwebtoken')
@@ -39,16 +40,17 @@ passport.deserializeUser(function(id, cb) {
 
  /* MONGOOSE SETUP */
 
-const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/kfl');
+const mongoose = require("mongoose");
+
+mongoose.connect("mongodb://127.0.0.1:27017/kfl_new", {
+  useNewUrlParser: true,
+  useCreateIndex: true
+});
 const Schema = mongoose.Schema;
 const UserDetail = new Schema({
-    name:String,
     email: String,
     password: String,
-    bday:String,
     tname:String,
-    favteam:String,
     token:String
 
   });
@@ -125,35 +127,36 @@ passport.use('login',new LocalStrategy(
 
 //LOGIN
 
-app.post('/login_user',
-  passport.authenticate('login', { failureRedirect: '/error' }),
-  async (req, res)  => {
-
+app.post(
+  "/users/login_user",
+  passport.authenticate("login", { failureRedirect: "/error" }),
+  async (req, res) => {
     req.session.user = req.user.email;
     req.session.team = req.user.team;
     console.log(req.user.email);
-      try {
-          const token = await user.generateAuthToken();
-          res.send({ user, token });
-      } catch (e) {
-          console.log(e);
-          res.status(500).send();
-      }
+    // try {
+    //   const token = await user.generateAuthToken();
+    //   res.send({ user, token });
+    // } catch (e) {
+    //   console.log(e);
+    //   res.status(500).send();
+    // }
 
-
-    return res.redirect('/home');
-
-  });
+    return res.redirect("/profile");
+  }
+);
 
 
 //SignUp
-app.post('/sign_up',
-  passport.authenticate('sign_up', { failureRedirect: '/error_signup' }),
+app.post(
+  "/users/sign_up",
+  passport.authenticate("sign_up", { failureRedirect: "/error_signup" }),
   async (req, res) => {
-      req.session.user = req.user.email;
-      req.session.team = req.user.team;
-        res.redirect('/home');
-  });
+    req.session.user = req.user.email;
+    req.session.team = req.user.team;
+    res.redirect("/profile");
+  }
+);
 
 passport.use( 'sign_up',new LocalStrategy({
        usernameField : 'email',
@@ -180,12 +183,12 @@ passport.use( 'sign_up',new LocalStrategy({
 
       var newUser = new UserDetails();
           // set the user's local credentials
-          newUser.name =  req.param('uname');
+
           newUser.password = createHash(req.param('password'));
           newUser.email = req.param('email');
-          newUser.bday = req.param('bday');
+
           newUser.tname = req.param('tname');
-          newUser.favteam = req.param('favteam');
+
           console.log(newUser.name);
           const token = jwt.sign(
             { _id: newUser._id.toString() },

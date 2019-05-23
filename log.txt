@@ -1,0 +1,1024 @@
+commit 238bf4a2003b209e1ddcdf9d1928c7c659643feb
+Author: frostnovus <psolante@deakin.edu.au>
+Date:   Mon May 20 22:40:38 2019 +1000
+
+    this commit
+
+commit f9815f15d76fa56fefa06342561ddb4aef440e02
+Author: frostnovus <psolante@deakin.edu.au>
+Date:   Mon May 20 17:43:48 2019 +1000
+
+    test branch
+
+commit b2b83df3428051437d6c1831ef9c387579f66f96
+Author: Faiq Ul Hassan <faiqch19@gmail.com>
+Date:   Sun May 19 17:25:17 2019 +1000
+
+    Update .DS_Store
+
+commit a1e70522e16805aed5082056ef20181714ce9666
+Author: Faiq Ul Hassan <faiqch19@gmail.com>
+Date:   Sun May 19 17:25:14 2019 +1000
+
+    cleaning backup
+
+commit f7b6f1a5ea800120b9e265a2a57998874480a8ca
+Author: Faiq Ul Hassan <faiqch19@gmail.com>
+Date:   Sun May 19 17:24:01 2019 +1000
+
+    cleaning code
+
+commit cdff26e339dc3a4ab7deef7cc3211e8d3f0cbd7e
+Author: Faiq Ul Hassan <faiqch19@gmail.com>
+Date:   Sun May 19 17:22:21 2019 +1000
+
+    updated prototype
+
+commit 7e84f4cc4d2ce7f2ed71fd09ce3392f3c6e783c2
+Author: Faiq Ul Hassan <faiqch19@gmail.com>
+Date:   Sun May 19 17:19:57 2019 +1000
+
+    updates
+
+commit 11c7d5f9548559a9bfea1e75f142cce08a908ebd
+Author: Faiq Ul Hassan <faiqch19@gmail.com>
+Date:   Sun May 19 17:06:42 2019 +1000
+
+    updates
+
+commit 326d1c3f72af171d811a6430c767c4c44c4bbe18
+Author: Faiq Ul Hassan <faiqch19@gmail.com>
+Date:   Sun May 19 16:35:35 2019 +1000
+
+    updated
+
+commit cb86061c5a1c81a1aab409419455f24565240d16
+Author: Faiq Ul Hassan <faiqch19@gmail.com>
+Date:   Sun May 19 16:20:20 2019 +1000
+
+    updates
+
+commit 317d9b0d3e220dbd1a7fde5a9bcf6ebb0353848d
+Author: Faiq Ul Hassan <faiqch19@gmail.com>
+Date:   Sun May 19 16:12:12 2019 +1000
+
+    update
+
+commit 71db553c67557e27be21fbdb4683a287d65b36c1
+Author: Faiq Ul Hassan <faiqch19@gmail.com>
+Date:   Sun May 19 15:58:54 2019 +1000
+
+    Update home.html
+
+commit cacfe5bad3c5411383f6d0b57c7e95dc7168e6af
+Author: Faiq Ul Hassan <faiqch19@gmail.com>
+Date:   Sun May 19 15:56:19 2019 +1000
+
+    Update home.html
+
+commit b4c0e6b4a9214988c02a870531d03c7cd507b9f1
+Author: Faiq Ul Hassan <faiqch19@gmail.com>
+Date:   Sun May 19 15:53:54 2019 +1000
+
+    updated
+
+commit 9f8b845d9779748b67c8063e5a861c6a6db89fd3
+Author: Faiq Ul Hassan <faiqch19@gmail.com>
+Date:   Sun May 19 15:50:47 2019 +1000
+
+    Create functions.js
+
+commit e1ba57669d52e40ddfc84d1323975fff7b0154fb
+Author: Faiq Ul Hassan <faiqch19@gmail.com>
+Date:   Sun May 19 15:49:34 2019 +1000
+
+    updates
+
+commit f01414c109af74b8f635d8ac49dc2d2fdfe73f1c
+Author: Faiq Ul Hassan <faiqch19@gmail.com>
+Date:   Sun May 19 15:48:08 2019 +1000
+
+    Update home.html
+
+commit a146f1e60b2417494c5af3759648556d73be9a7e
+Author: Faiq Ul Hassan <faiqch19@gmail.com>
+Date:   Sun May 19 15:45:33 2019 +1000
+
+    Update home.html
+
+commit e0b3d6689f6c91a4d93f54127d9d30964e8f9895
+Author: Faiq Ul Hassan <faiqch19@gmail.com>
+Date:   Sun May 19 15:18:51 2019 +1000
+
+    Update home.html
+
+commit 1635d71e7435cd4d1ae71e1c064c02ff4496453f
+Author: Faiq Ul Hassan <faiqch19@gmail.com>
+Date:   Sun May 19 15:12:52 2019 +1000
+
+    updates
+
+commit 0943dc9d45f85a8f1c7947e039e043e7ef1fad0a
+Author: Faiq Ul Hassan <faiqch19@gmail.com>
+Date:   Sun May 19 01:47:54 2019 +1000
+
+    updates
+
+commit b9cb7b58c2f2d9116831f94eb888188cff4b1a40
+Author: Faiq Ul Hassan <faiqch19@gmail.com>
+Date:   Sat May 18 23:01:29 2019 +1000
+
+    Update select_players copy.html
+
+commit cad1d52bfd6aa2e2296d53a0914b8b89ce2bf82a
+Merge: aa9badf 96e7917
+Author: Faiq Ul Hassan <faiqch19@gmail.com>
+Date:   Sat May 18 23:00:26 2019 +1000
+
+    Merge branch 'master' of https://github.com/AFL-Almanac/AFL-Fanstasy
+
+commit aa9badf428ff635e46e57cfb3e78b69838d55f38
+Author: Faiq Ul Hassan <faiqch19@gmail.com>
+Date:   Sat May 18 23:00:22 2019 +1000
+
+    added new folder
+
+commit 96e79174de90d08e3751bf8b9bd61ba1705342f7
+Author: frostnovus <psolante@deakin.edu.au>
+Date:   Sat May 18 15:07:32 2019 +1000
+
+    login resolved, now working on redirection
+
+commit fbc975f92de443e4b5970b355df87aa7e860070a
+Author: Faiq Ul Hassan <faiqch19@gmail.com>
+Date:   Sat May 18 14:42:40 2019 +1000
+
+    new folder
+
+commit 3ae85b95709d43fa3be3333a4d170a3882ad96b2
+Merge: aa43999 1f18c91
+Author: Faiq Ul Hassan <faiqch19@gmail.com>
+Date:   Sat May 18 13:39:13 2019 +1000
+
+    Merge branch 'master' of https://github.com/AFL-Almanac/AFL-Fanstasy
+
+commit aa43999805f08e5c3ec45211a54de700eed2bff8
+Author: Faiq Ul Hassan <faiqch19@gmail.com>
+Date:   Sat May 18 13:38:58 2019 +1000
+
+    comit
+
+commit 1f18c91b21d7bf197185358aa2ae1977e3b9ac78
+Author: frostnovus <psolante@deakin.edu.au>
+Date:   Sat May 18 12:25:03 2019 +1000
+
+    login works now
+
+commit e733ac645cf0071ce6b4fb492690b2bdf5ae867e
+Author: frostnovus <psolante@deakin.edu.au>
+Date:   Fri May 17 15:03:28 2019 +1000
+
+    revert to working branch
+    
+    reverr to working branch
+
+commit 2f430a60126c0e3b0e7fa90ce235952d2b5f952c
+Author: frostnovus <psolante@deakin.edu.au>
+Date:   Fri May 17 11:19:47 2019 +1000
+
+    working on logout
+
+commit cf48846e023fb6200372a124830549d3aa2cc799
+Author: frostnovus <psolante@deakin.edu.au>
+Date:   Thu May 16 20:41:34 2019 +1000
+
+    registration is now live
+
+commit cf848a9cadf05da50375c438282910f7d36c53f3
+Author: frostnovus <psolante@deakin.edu.au>
+Date:   Thu May 16 18:52:38 2019 +1000
+
+    modified
+
+commit 388bab5c2761e263bf27c03e9954c85934e6042d
+Author: frostnovus <psolante@deakin.edu.au>
+Date:   Thu May 16 14:48:55 2019 +1000
+
+    authentication and token added, will need further testing
+
+commit 8a654e868969e460b1205462e0b659ac90e16cfd
+Author: frostnovus <psolante@deakin.edu.au>
+Date:   Thu May 16 14:44:31 2019 +1000
+
+    setup for authentication
+
+commit b773d96db1e783469eb6e0a9b533c0bdfb64c9d9
+Author: frostnovus <psolante@deakin.edu.au>
+Date:   Tue May 14 15:26:24 2019 +1000
+
+    installing packages getting ready for tokens
+
+commit eaffc6420d404dc2ce89a30667ae1f4a6f2af5e8
+Merge: 281219c acf3a52
+Author: Faiq Ul Hassan <faiqch19@gmail.com>
+Date:   Tue May 14 00:45:24 2019 +1000
+
+    Merge branch 'master' of https://github.com/AFL-Almanac/AFL-Fanstasy
+
+commit 281219ccd5deedd1eda176cde5bb5f7b0ab47d9d
+Author: Faiq Ul Hassan <faiqch19@gmail.com>
+Date:   Tue May 14 00:45:11 2019 +1000
+
+    update
+
+commit acf3a52cc029b1924333581156734600b459c85e
+Author: frostnovus <psolante@deakin.edu.au>
+Date:   Mon May 13 22:24:30 2019 +1000
+
+    changes to app.js
+
+commit 48fcb5fa8095d4385d3303c269e4ec3f60869637
+Author: faiqch19 <41541694+faiqch19@users.noreply.github.com>
+Date:   Sun May 12 22:54:23 2019 +1000
+
+    adding new page
+
+commit 68e2fde18a31cfa192ea88acd1f7d8fe3a171373
+Author: faiqch19 <41541694+faiqch19@users.noreply.github.com>
+Date:   Sun May 12 20:40:29 2019 +1000
+
+    Updated front Page with Login Modal
+
+commit cd2ddf188bf149bb345730fc30c5ee35f682c8af
+Merge: 954a7ef d120d2b
+Author: Faiq Ul Hassan <faiqch19@gmail.com>
+Date:   Tue May 7 12:12:47 2019 +1000
+
+    Merge branch 'master' of https://github.com/AFL-Almanac/AFL-Fanstasy
+
+commit 954a7ef1ee6da248076568c8e5ab2fec54def211
+Author: Faiq Ul Hassan <faiqch19@gmail.com>
+Date:   Tue May 7 12:12:36 2019 +1000
+
+    update
+
+commit d120d2b6d8493a015c6719d93d2a5c6fa850fd6d
+Author: frostnovus <psolante@deakin.edu.au>
+Date:   Sun May 5 11:18:56 2019 +1000
+
+    logic complete just need to edit css for styling
+
+commit d31d9330a7d150ab9370e0e8e21a1189319a8047
+Author: frostnovus <psolante@deakin.edu.au>
+Date:   Sat May 4 13:10:03 2019 +1000
+
+    almost there just need to display if the kid passes the quiz
+
+commit 9a6bc0c5ac86d6b799b89d73f2b537d147c84023
+Author: frostnovus <psolante@deakin.edu.au>
+Date:   Sat May 4 11:43:36 2019 +1000
+
+    new page
+
+commit 0f38e1da6003440e9b03e4a7d794f1b6c9999886
+Author: Faiq Ul Hassan <faiqch19@gmail.com>
+Date:   Thu May 2 21:40:49 2019 +1000
+
+    update V0.4
+
+commit 5a2504771e1fca7c1cd6134ecdd55c243e0e486e
+Author: Faiq Ul Hassan <faiqch19@gmail.com>
+Date:   Thu May 2 21:28:37 2019 +1000
+
+    update v 0.4
+
+commit 5910491a7b1ba6016e239c4bcbe2c8e119680e78
+Merge: 6c7a864 a746e97
+Author: Faiq Ul Hassan <faiqch19@gmail.com>
+Date:   Wed May 1 17:36:24 2019 +1000
+
+    Merge branch 'master' of https://github.com/AFL-Almanac/AFL-Fanstasy
+
+commit 6c7a864e35c4aa22dae532f1f64a7a3c93a3fd53
+Author: Faiq Ul Hassan <faiqch19@gmail.com>
+Date:   Wed May 1 17:36:19 2019 +1000
+
+    update 0.3
+
+commit a746e977fa682919cde25e3bd7cd452324627421
+Author: frostnovus <psolante@deakin.edu.au>
+Date:   Wed May 1 15:28:32 2019 +1000
+
+    .
+
+commit 2f7ac8cf878df786be75727f63c3198fc3ac2b02
+Author: frostnovus <psolante@deakin.edu.au>
+Date:   Wed May 1 14:48:08 2019 +1000
+
+    quiz logic part 1
+
+commit 480ff56168c8e27db5f59d938248c623078e4b38
+Author: Faiq Ul Hassan <faiqch19@gmail.com>
+Date:   Wed May 1 13:14:08 2019 +1000
+
+    update v0.2
+
+commit 15ec0d2d4c393fc4274b7f8b2c05e31fe9db2a65
+Merge: 441354b a613733
+Author: Faiq Ul Hassan <faiqch19@gmail.com>
+Date:   Wed May 1 09:03:39 2019 +1000
+
+    Merge branch 'master' of https://github.com/AFL-Almanac/AFL-Fanstasy
+
+commit 441354b92a398578433ec0bd43193c5b6849d596
+Author: Faiq Ul Hassan <faiqch19@gmail.com>
+Date:   Wed May 1 09:02:20 2019 +1000
+
+    update v 0.1
+
+commit a613733bfb76b1658768a1e5bdf0f72ec29a7ee8
+Author: frostnovus <psolante@deakin.edu.au>
+Date:   Tue Apr 30 14:56:26 2019 +1000
+
+    script update
+
+commit 8e9b4f36b580fa231be8d0f8d21063b3bc044eb6
+Author: frostnovus <psolante@deakin.edu.au>
+Date:   Tue Apr 30 14:50:04 2019 +1000
+
+    updating quiz page
+
+commit cea64c09586ddb835ff1d608163effef6112bd1e
+Author: Faiq Ul Hassan <faiqch19@gmail.com>
+Date:   Mon Apr 22 13:47:32 2019 +1000
+
+    update
+
+commit 531821621d0018591ac4e34f591f9cd7c57de978
+Author: Faiq Ul Hassan <faiqch19@gmail.com>
+Date:   Thu Apr 18 09:53:03 2019 +1000
+
+    updated main
+
+commit 76ea7a325780d17dca2a1f5706232b97107a01e1
+Author: Faiq Ul Hassan <faiqch19@gmail.com>
+Date:   Thu Apr 18 09:15:54 2019 +1000
+
+    kfl prototype
+
+commit a21e66592e6615af3c3dd994799a16eda9d688e4
+Author: frostnovus <psolante@deakin.edu.au>
+Date:   Wed Apr 17 17:41:50 2019 +1000
+
+    add quiz
+
+commit 5225bedafe4da29e04cafdf62b58c11f70434d42
+Author: sukhbirsingh1104 <41713422+sukhbirsingh1104@users.noreply.github.com>
+Date:   Sun Mar 17 00:39:15 2019 +1100
+
+    new commit file
+    
+    new  commit file
+
+commit d649d207b333752500d5d0c83144a8849462c673
+Merge: 3e7c39b 2ca1c83
+Author: Frost Novus <frostnovus@Frosts-MacBook-Air.local>
+Date:   Thu Mar 14 13:06:45 2019 +1100
+
+    merge
+
+commit 3e7c39b81a583a08d0ce286ff5e7e8f145c0b274
+Merge: 8753e77 9d4272e
+Author: Frost Novus <frostnovus@Frosts-MacBook-Air.local>
+Date:   Thu Mar 14 12:53:04 2019 +1100
+
+    this merge
+
+commit 2ca1c83210f3b9f68d944ade4bbcd3300a8a87c3
+Author: NickSolante <41457938+NickSolante@users.noreply.github.com>
+Date:   Thu Mar 14 12:48:41 2019 +1100
+
+    Delete .DS_Store
+
+commit 8753e7738caf1758263f6ffa20ae13e7592e4014
+Author: Frost Novus <frostnovus@Frosts-MacBook-Air.local>
+Date:   Thu Mar 14 12:45:41 2019 +1100
+
+    this commit
+
+commit 9d4272ec76aec5e945cc2704a9b5c8e23990d5f0
+Author: unknown <rgup@deakin.edu.au>
+Date:   Thu Mar 14 12:37:54 2019 +1100
+
+    Commit Raghav 782
+
+commit 0d3bfa7f9b40b6f15307a9f27efd3916c07d291a
+Author: Frost Novus <frostnovus@Frosts-MacBook-Air.local>
+Date:   Thu Mar 14 12:17:54 2019 +1100
+
+    new commit
+
+commit 178e71a2ce724a749451e4076ae1cd1c47357bcc
+Merge: 284d62b 7bbed6d
+Author: NickSolante <41457938+NickSolante@users.noreply.github.com>
+Date:   Thu Mar 14 12:10:56 2019 +1100
+
+    Merge pull request #6 from AFL-Almanac/development-feature-1
+    
+    initial commit
+
+commit 7bbed6dca384ffe847319f0de696b732caed9d29
+Author: Frost Novus <frostnovus@Frosts-MacBook-Air.local>
+Date:   Thu Mar 14 12:02:18 2019 +1100
+
+    initial commit
+
+commit 284d62becb9f324b99a2f6dbda0211acc627dd04
+Author: Sampurn <sbanerji@deakin.edu.au>
+Date:   Tue Oct 2 14:08:12 2018 +1000
+
+    changed cookie time and added draft player
+
+commit 00f9b0092bf415420b3d21bd8b1477106262b37f
+Author: Sampurn <sbanerji@deakin.edu.au>
+Date:   Tue Oct 2 12:41:27 2018 +1000
+
+    fixed signup
+
+commit 6c4a697d71feaffecc4623a4fa7e42e7a5b00e03
+Author: Sampurn <sbanerji@deakin.edu.au>
+Date:   Sun Sep 30 16:07:07 2018 +1000
+
+    added logo to profile
+
+commit 4ed36effe4d6328a2c14567546cd87f2512bfcd9
+Author: Sampurn <sbanerji@deakin.edu.au>
+Date:   Sun Sep 30 16:01:22 2018 +1000
+
+     changed ui for draft players
+
+commit e5d7e261f49d91e2a7a1dc836a0347166c93e527
+Author: Sampurn <sbanerji@deakin.edu.au>
+Date:   Fri Sep 28 14:02:16 2018 +1000
+
+    fixed redirection after signup
+
+commit 4c1a2886b34a2cdded9f090569bb69f417ee6d16
+Author: Sampurn <sbanerji@deakin.edu.au>
+Date:   Fri Sep 28 13:56:44 2018 +1000
+
+    added profile redirection on click of the name
+
+commit a808f49c72d3f4e77b42ed5e5173dad76615ad8e
+Author: Sampurn <sbanerji@deakin.edu.au>
+Date:   Fri Sep 28 13:49:47 2018 +1000
+
+    added leader page route
+
+commit 92fb80ef98de30727e805d01afca2548f59cd465
+Author: Sampurn <sbanerji@deakin.edu.au>
+Date:   Fri Sep 28 00:20:32 2018 +1000
+
+    removed console logs and and fixed import errors on frontend
+
+commit 6fed35ceaf21b24f2d6c5803fa29ad907e227f36
+Merge: e945d45 0d1413f
+Author: sampurnbanerji92 <41273845+sampurnbanerji92@users.noreply.github.com>
+Date:   Fri Sep 28 00:11:32 2018 +1000
+
+    Merge pull request #5 from AFL-Almanac/development
+    
+    Development
+
+commit 0d1413f6259a281b0910702f21b6986f4cdc91ce
+Merge: 8a36fef b8c3ea9
+Author: sampurnbanerji92 <41273845+sampurnbanerji92@users.noreply.github.com>
+Date:   Fri Sep 28 00:11:09 2018 +1000
+
+    Merge pull request #4 from AFL-Almanac/profileDraftMerge
+    
+    Profile draft merge
+
+commit b8c3ea9a8816fcc8200d2d6ac0f4ce2f814dfa7e
+Author: Sampurn <sbanerji@deakin.edu.au>
+Date:   Fri Sep 28 00:10:12 2018 +1000
+
+    added jquery ui import
+
+commit 9610b58157ba19ec67fae130b3544bacab78b603
+Author: Sampurn <sbanerji@deakin.edu.au>
+Date:   Fri Sep 28 00:06:45 2018 +1000
+
+    merged and refactored all code for profile and draft player need to fix drag and drop
+
+commit d7e3750f84245907dd8a90a05aafc1ddb1dbbb0d
+Author: Sampurn <sbanerji@deakin.edu.au>
+Date:   Fri Sep 28 00:03:47 2018 +1000
+
+    merged and refactored all code for profile and draft player need to fix drag and drop
+
+commit e945d4593a4665adb1e59be9feb13d5378d27804
+Merge: 371f150 8a36fef
+Author: sampurnbanerji92 <41273845+sampurnbanerji92@users.noreply.github.com>
+Date:   Thu Sep 27 20:35:59 2018 +1000
+
+    Merge pull request #3 from AFL-Almanac/development
+    
+    Development
+
+commit 8a36fefee56615acfb6b9d3f365bcb612741ddfd
+Author: sukhbirsingh1104 <41713422+sukhbirsingh1104@users.noreply.github.com>
+Date:   Sat Sep 22 15:22:42 2018 +1000
+
+    Update index.html
+
+commit 1c65277ff405361bc82f0d4d2fad48c1294c05f8
+Author: sukhbirsingh1104 <41713422+sukhbirsingh1104@users.noreply.github.com>
+Date:   Fri Sep 21 13:39:34 2018 +1000
+
+    fixed signup
+
+commit 5bc58a1f9ea641cb148a60351411924a4211086a
+Author: Ncik <psolante@deakin.edu.au>
+Date:   Thu Sep 20 15:15:07 2018 +1000
+
+    with boards
+
+commit 905315371012731583d2f356893c54d556deda7b
+Author: Ncik <psolante@deakin.edu.au>
+Date:   Thu Sep 20 15:09:42 2018 +1000
+
+    with pages
+
+commit e51925f748631686d369b02ca2c6c6f8c96868e3
+Author: Ncik <psolante@deakin.edu.au>
+Date:   Thu Sep 20 15:05:18 2018 +1000
+
+    pages
+
+commit 4e15ed78d913f4b130883aa4eed19bc8592642cb
+Author: Sampurn <sbanerji@deakin.edu.au>
+Date:   Mon Sep 17 22:30:15 2018 +1000
+
+    added iframe for video
+
+commit 34004eed6dbde2451ad6cd47c26bcc4c8462421c
+Author: Sampurn <sbanerji@deakin.edu.au>
+Date:   Thu Sep 13 23:18:16 2018 +1000
+
+    Merge branch 'development' of https://github.com/AFL-Almanac/AFL-Kids-Fanstasy into login_mongo
+    
+    # Conflicts:
+    #       index.html
+    #       public/js/main.js
+
+commit e39064e469e49a08891e462274a52f1c34bb70f8
+Author: Sampurn <sbanerji@deakin.edu.au>
+Date:   Thu Sep 13 23:11:30 2018 +1000
+
+    fixed field names in login
+
+commit d947aed6bb8cac4b66bab2b202413bc9aff33bd5
+Author: Sampurn <sbanerji@deakin.edu.au>
+Date:   Thu Sep 13 21:48:01 2018 +1000
+
+    fixed call for signup
+
+commit 8e1f0e47ec1f77916ebc3191d10f78d7319cee2a
+Merge: 7bcfd0e bac9843
+Author: Sampurn <sbanerji@deakin.edu.au>
+Date:   Thu Sep 13 20:17:10 2018 +1000
+
+    Merge branch 'development' of https://github.com/AFL-Almanac/AFL-Kids-Fanstasy into login_mongo
+    
+    # Conflicts:
+    #       index.html
+    #       public/js/main.js
+
+commit 7bcfd0ef0d386dc7f1a48e26c2adfb4464fb25c3
+Author: sukhbirsingh1104 <41713422+sukhbirsingh1104@users.noreply.github.com>
+Date:   Thu Sep 13 18:31:47 2018 +1000
+
+    changes for signup error message
+
+commit 48659e6905e5967e7a5a38a986a035d97dd2003a
+Author: sukhbirsingh1104 <41713422+sukhbirsingh1104@users.noreply.github.com>
+Date:   Thu Sep 13 18:30:28 2018 +1000
+
+    changes for signup error message
+
+commit 9adf72f36457782a0f64400e2b66312224d490a4
+Author: sukhbirsingh1104 <41713422+sukhbirsingh1104@users.noreply.github.com>
+Date:   Thu Sep 13 18:29:48 2018 +1000
+
+    changes for signup error message
+
+commit bac9843aa0d691a1c89c9d3c4a922ca7859d144f
+Author: Ncik <psolante@deakin.edu.au>
+Date:   Thu Sep 13 11:14:43 2018 +1000
+
+    with video
+
+commit c952fd86a332842df3fccd2f0f401a0bd15403d9
+Author: Ncik <psolante@deakin.edu.au>
+Date:   Wed Sep 12 13:53:24 2018 +1000
+
+    something
+
+commit ce0c9ad195a4af8658d2f4a3e5e1151b8f9fd81c
+Author: Ncik <psolante@deakin.edu.au>
+Date:   Wed Sep 12 13:52:41 2018 +1000
+
+    with signup
+
+commit 3ef3dbbddc2690f778be76b2c355359d20a50ede
+Author: Ncik <psolante@deakin.edu.au>
+Date:   Wed Sep 12 13:22:47 2018 +1000
+
+    login rework
+
+commit 7c1b502e23a8426a187cb7b12e45f37824b4e0eb
+Merge: a508975 fbc3735
+Author: Sampurn <sbanerji@deakin.edu.au>
+Date:   Wed Sep 12 12:58:53 2018 +1000
+
+    changes for error message and redirect to profile
+
+commit a5089756ac2015f4144f1b5e2ae7ca4af196d7ab
+Author: Sampurn <sbanerji@deakin.edu.au>
+Date:   Wed Sep 12 12:56:34 2018 +1000
+
+    added error mesages for login and redirection to profile page
+
+commit fbc37351e364c22f72e827e376ccac9ac835a499
+Author: Ncik <psolante@deakin.edu.au>
+Date:   Wed Sep 12 12:17:26 2018 +1000
+
+    with logo and signup teams
+
+commit b4f00bcb01db87fa5d92f2fbd8257b7999d4e1ea
+Author: Sampurn <sbanerji@deakin.edu.au>
+Date:   Wed Sep 12 11:55:05 2018 +1000
+
+    Merge branch 'development' of https://github.com/AFL-Almanac/AFL-Kids-Fanstasy into login_mongo
+    
+    # Conflicts:
+    #       app.js
+
+commit 840442054e7f9e987a1b7edb8ec8ef1a09e661ec
+Merge: 60569ca 6d29245
+Author: Sampurn <sbanerji@deakin.edu.au>
+Date:   Wed Sep 12 11:54:29 2018 +1000
+
+    Merge branch 'development' of https://github.com/AFL-Almanac/AFL-Kids-Fanstasy into login_mongo
+    
+    # Conflicts:
+    #       app.js
+
+commit 60569caf807c2ee9194812e260d3eda61b8f2dcb
+Author: Sampurn <sbanerji@deakin.edu.au>
+Date:   Wed Sep 12 11:38:45 2018 +1000
+
+    Merge branch 'login_mongo' of https://github.com/AFL-Almanac/AFL-Kids-Fanstasy into login_mongo
+    
+    # Conflicts:
+    #       app.js
+
+commit a59e3a7096de05d7231270a70bd88f19d99ef3f0
+Merge: edf75b6 47417fe
+Author: Sampurn <sbanerji@deakin.edu.au>
+Date:   Wed Sep 12 11:37:34 2018 +1000
+
+    Merge branch 'login_mongo' of https://github.com/AFL-Almanac/AFL-Kids-Fanstasy into login_mongo
+    
+    # Conflicts:
+    #       app.js
+
+commit 47417fea6003c8680ec54c4b183644899d921d4b
+Author: sukhbirsingh1104 <41713422+sukhbirsingh1104@users.noreply.github.com>
+Date:   Wed Sep 12 11:14:03 2018 +1000
+
+    implemented  passport and password encyption
+
+commit 6d29245ca93626489c4d39c59baae1913a3a81a7
+Author: Ncik <psolante@deakin.edu.au>
+Date:   Wed Sep 12 11:01:59 2018 +1000
+
+    updates
+
+commit edf75b69b9b26cd61421c77cbb87f04b6d93dc99
+Merge: e45f8c5 d22d005
+Author: Sampurn <sbanerji@deakin.edu.au>
+Date:   Fri Sep 7 11:22:30 2018 +1000
+
+    Merge branch 'login_mongo' of https://github.com/AFL-Almanac/AFL-Kids-Fanstasy into login_mongo
+
+commit d22d005db7a44f674efc13f579f3cd5334a9bfa1
+Author: sukhbirsingh1104 <41713422+sukhbirsingh1104@users.noreply.github.com>
+Date:   Thu Sep 6 17:12:44 2018 +1000
+
+    signup with validations
+
+commit f16bfdca526bbb6b1cb8e2f5ab12d268db51503e
+Author: Ncik <psolante@deakin.edu.au>
+Date:   Thu Sep 6 15:44:01 2018 +1000
+
+    done sign up
+
+commit b0cde6a7fe0ec096347eaadf914b3a7e4a66c1c9
+Author: Ncik <psolante@deakin.edu.au>
+Date:   Thu Sep 6 14:18:01 2018 +1000
+
+    done sign up
+
+commit 3f63305e14b1f833213dd289840934fd1430ee31
+Author: Ncik <psolante@deakin.edu.au>
+Date:   Thu Sep 6 14:02:03 2018 +1000
+
+    done sign up
+
+commit 9ee70c6786023caaef837ac54847e3471b7b6144
+Author: Ncik <psolante@deakin.edu.au>
+Date:   Wed Sep 5 15:45:04 2018 +1000
+
+    with sign up and proper page as per requested
+
+commit 8253011fee7de6c1f1c2b80c6c53368eeb4376ac
+Author: Sampurn <sbanerji@deakin.edu.au>
+Date:   Wed Sep 5 15:02:57 2018 +1000
+
+    added route for teams in banckend for profile page
+
+commit 7ecab53b4afb32bc76cfcef50cf285c7efd54717
+Author: Sampurn <sbanerji@deakin.edu.au>
+Date:   Wed Sep 5 15:02:07 2018 +1000
+
+    added route for teams in banckend for profile page
+
+commit 1a100fb962b07594fc840e2038dee3e9fd0763ef
+Author: Ncik <psolante@deakin.edu.au>
+Date:   Fri Aug 31 13:51:06 2018 +1000
+
+    with KFL on home page no logo yet
+
+commit 04b1a2addf736be298675d859020875e26a841b2
+Author: Ncik <psolante@deakin.edu.au>
+Date:   Thu Aug 30 15:57:53 2018 +1000
+
+    increased font-size
+
+commit abc1cc5c819ba68cb116eab596ffbdfb0cf57f28
+Author: Ncik <psolante@deakin.edu.au>
+Date:   Thu Aug 30 15:46:10 2018 +1000
+
+    modal login
+
+commit 4cc1f7df0758031671047df8cc9fd7048c0d913c
+Author: Ncik <psolante@deakin.edu.au>
+Date:   Thu Aug 30 15:20:31 2018 +1000
+
+    images fixed
+
+commit 72da940da54ff00a4e6a438ac3f0cc0aef0aeed7
+Author: Ncik <psolante@deakin.edu.au>
+Date:   Thu Aug 30 14:59:13 2018 +1000
+
+    parallax with scrollspy on home page but images wont load for some reason still fixing
+
+commit 918fa45bd6957f392a6d588c54ecbc325ec7eeb0
+Author: sukhbirsingh1104 <41713422+sukhbirsingh1104@users.noreply.github.com>
+Date:   Wed Aug 29 12:04:41 2018 +1000
+
+    implemented routes and logout with session
+
+commit c0b7e7ef5b44ddeaee01a5369ef902b1a7634998
+Author: Sampurn <sbanerji@deakin.edu.au>
+Date:   Sun Aug 26 23:19:12 2018 +1000
+
+    refactored code and commented validation for now
+
+commit cd56b5f11354083323eac3911c15469327380b3a
+Merge: 3ea499a 40a9622
+Author: Sampurn <sbanerji@deakin.edu.au>
+Date:   Sat Aug 25 12:53:11 2018 +1000
+
+    Merge branch 'Index-Page' of https://github.com/AFL-Almanac/AFL-Kids-Fanstasy into development
+    
+    # Conflicts:
+    #       index.html
+
+commit 3ea499a79f48dc369dec4e58b7da537361dca8fb
+Author: Sampurn <sbanerji@deakin.edu.au>
+Date:   Sat Aug 25 12:44:54 2018 +1000
+
+    added main js
+
+commit edf461cb523034862953a9ffb620aa01dfe050df
+Author: Sampurn <sbanerji@deakin.edu.au>
+Date:   Sat Aug 25 12:35:49 2018 +1000
+
+    removed main js for now will be adding in the future
+
+commit d3bd85597563c1f2a23cbaa9bedc275cc3215cf1
+Author: Sampurn <sbanerji@deakin.edu.au>
+Date:   Sat Aug 25 12:34:40 2018 +1000
+
+    fixed login form frontend
+
+commit 40a96226ab6638da06bc2326ef87f337970c5c33
+Author: Ncik <psolante@deakin.edu.au>
+Date:   Sat Aug 25 12:22:24 2018 +1000
+
+    with all updates
+
+commit e45f8c58d27655536c6fd9947057418ff1d5f345
+Author: Sampurn <sbanerji@deakin.edu.au>
+Date:   Sat Aug 25 12:22:12 2018 +1000
+
+    folder restructuring
+
+commit 770f63925d46ee1cd6b357910838a3f7628b1ed0
+Merge: cf6b78e 371f150
+Author: Sampurn <sbanerji@deakin.edu.au>
+Date:   Sat Aug 25 12:20:56 2018 +1000
+
+    Merge branch 'master' of https://github.com/AFL-Almanac/AFL-Kids-Fanstasy into login_mongo
+    
+    # Conflicts:
+    #       index.html
+
+commit 371f15009993e1b566c337f2ec12b5829516ee89
+Author: Ncik <psolante@deakin.edu.au>
+Date:   Fri Aug 24 16:12:25 2018 +1000
+
+    placement changes
+
+commit 2ade49d4910b175bfab08788d782371778984dff
+Author: Ncik <psolante@deakin.edu.au>
+Date:   Wed Aug 22 14:45:48 2018 +1000
+
+    will reload page if input is not valid
+
+commit 181aaf7167a1c36ef815ff44c8183e369a1cba5d
+Author: Ncik <psolante@deakin.edu.au>
+Date:   Tue Aug 21 14:02:38 2018 +1000
+
+    changes for the description to show
+
+commit 3eb739b4606a43aa492042041a6dd96bdcb1fe22
+Author: Ncik <psolante@deakin.edu.au>
+Date:   Tue Aug 21 14:00:41 2018 +1000
+
+    with description
+
+commit ebf127b482a6804539d9d78999d7a0b0667f935c
+Author: Ncik <psolante@deakin.edu.au>
+Date:   Tue Aug 21 13:51:23 2018 +1000
+
+    joint effort for page
+
+commit cf6b78e072a7bfa25e89f01032d689b48eb6dcaf
+Author: sukhbirsingh1104 <41713422+sukhbirsingh1104@users.noreply.github.com>
+Date:   Mon Aug 20 15:59:34 2018 +1000
+
+    implemented session with login
+
+commit 1bb4a02fff0e62adcaa9b16eb3bfe4da56ee9fa4
+Author: Krishthik <41405481+Krishthik@users.noreply.github.com>
+Date:   Thu Aug 16 21:06:02 2018 +1000
+
+    Add files via upload
+
+commit 3171953ad366bd3da6bce2944d199b1adc9df5ac
+Author: Krishthik <41405481+Krishthik@users.noreply.github.com>
+Date:   Thu Aug 16 21:05:33 2018 +1000
+
+    Add files via upload
+
+commit 092a74d70827c5e00b39ae1c5cf43766cd35b40a
+Author: Krishthik <41405481+Krishthik@users.noreply.github.com>
+Date:   Thu Aug 16 21:04:54 2018 +1000
+
+    Add files via upload
+
+commit 39e638e719695fe222bcbfe8da04242cb444cfc8
+Author: Krishthik <41405481+Krishthik@users.noreply.github.com>
+Date:   Thu Aug 16 21:02:36 2018 +1000
+
+    Add files via upload
+
+commit 1e7feb8051ff731ff06064828e3de874f166ec3b
+Author: Ncik <psolante@deakin.edu.au>
+Date:   Thu Aug 16 16:54:42 2018 +1000
+
+    re arrange
+
+commit 2a649f2ebca51d3615f8933a4ad6516e61995e3b
+Author: Ncik <psolante@deakin.edu.au>
+Date:   Thu Aug 16 16:26:45 2018 +1000
+
+    with description
+
+commit 98e3e2bfd0d15608182f6b63522dbcfe7eb827e2
+Author: sukhbirsingh1104 <41713422+sukhbirsingh1104@users.noreply.github.com>
+Date:   Wed Aug 15 14:03:36 2018 +1000
+
+    connection with mongo db and login from database
+
+commit db8b0ae2cfc49e8dc53ca49a01d28b7aad8f1e32
+Author: sukhbirsingh1104 <41713422+sukhbirsingh1104@users.noreply.github.com>
+Date:   Wed Aug 15 13:54:24 2018 +1000
+
+    Add files via upload
+    
+    connection with mongo db and login from database
+
+commit c8d2299f43fd3bc872cede8f8b0a7a2fb71aab31
+Author: Incubus <sbanerji@deakin.edu.au>
+Date:   Mon Aug 13 21:30:59 2018 +1000
+
+    added monngo connection and sample query to find from users collection kfl db
+
+commit d2350794759c7a6265646e91e7600ce139600371
+Author: Ncik <psolante@deakin.edu.au>
+Date:   Thu Aug 9 16:28:19 2018 +1000
+
+    adding bullet points
+
+commit 8552d124995733878a252f10ec8a9012de775944
+Author: Ncik <psolante@deakin.edu.au>
+Date:   Thu Aug 9 16:18:22 2018 +1000
+
+    login page
+
+commit 77f72d1084ede0c4eaeea7bf7e2fd7cdaec465fe
+Author: Incubus <sbanerji@deakin.edu.au>
+Date:   Sat Aug 4 00:31:31 2018 +1000
+
+    added home page and login page
+
+commit ac0e63f00580807e8676aca7373276d5b781aa2f
+Author: Incubus <sbanerji@deakin.edu.au>
+Date:   Fri Aug 3 12:23:59 2018 +1000
+
+    initial commit with backend server and dummy home
+
+commit 6db2daae708d9a83f5e01a3d66d0c63d6b649e76
+Author: Krishthik <41405481+Krishthik@users.noreply.github.com>
+Date:   Mon Jul 30 14:04:34 2018 +1000
+
+    Karthikk_Test.txt
+
+commit 468f61cc26ff06ca5213cfb4a767f59817f28564
+Author: sukhbirsingh1104 <41713422+sukhbirsingh1104@users.noreply.github.com>
+Date:   Thu Jul 26 13:22:57 2018 +1000
+
+    Create sukhbirsingh_test.txt
+
+commit a1a07be3112e364f6b16bc0f80c5b26f7d8753e3
+Author: Monica Sant <mhsant@deakin.edu.au>
+Date:   Mon Jul 23 15:34:06 2018 +0530
+
+    Test1
+
+commit b5c997d8eb0a42338df68a6560a222906251758d
+Author: Monica Sant <mhsant@deakin.edu.au>
+Date:   Mon Jul 23 15:32:38 2018 +0530
+
+    Test
+
+commit 0684b51a18deac5d403602c33c0e24ae59878d96
+Author: monicasant <41273767+monicasant@users.noreply.github.com>
+Date:   Mon Jul 23 08:00:00 2018 +0530
+
+    Delete monicasant_test.txt
+
+commit 66c06f89586cd31b69db5e631fc087a4fb2bffda
+Author: monicasant <41273767+monicasant@users.noreply.github.com>
+Date:   Mon Jul 23 07:18:57 2018 +0530
+
+    Set theme jekyll-theme-leap-day
+
+commit 5224fc9bafbe1e465b7adf2711db245d5b157ddf
+Author: monicasant <41273767+monicasant@users.noreply.github.com>
+Date:   Mon Jul 23 10:19:39 2018 +1000
+
+    Create shashank_test.txt
+
+commit 64630d78ec703244a8d839c53b2067e6a0b1d753
+Author: monicasant <41273767+monicasant@users.noreply.github.com>
+Date:   Mon Jul 23 10:19:22 2018 +1000
+
+    Create monicasant_test.txt
+
+commit e65e03256c8cf9efc3207532a99a6018bbf26bd5
+Author: sampurnbanerji92 <sbanerji@deakin.edu.au>
+Date:   Sat Jul 21 18:05:51 2018 +1000
+
+    initial commit
+
+commit 007c65ad85312d7fb26ddb48f93d09e0ed5b3f23
+Author: monicasant <41273767+monicasant@users.noreply.github.com>
+Date:   Fri Jul 20 14:06:31 2018 +0530
+
+    Initial commit

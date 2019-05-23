@@ -91,18 +91,17 @@
 
         e.preventDefault();
         $.ajax({
-            url: "/login_user",
-            type: 'POST',
-            data : $('#loginForm').serialize(),
-            success: function(res){
-                if(res.message){
-                $('#errorMessage').text(res.message);
-                $('#errorMessage').show();
-                }
-                else {
-                    window.location.assign('/profile');
-                }
+          url: "/users/login_user",
+          type: "POST",
+          data: $("#loginForm").serialize(),
+          success: function(res) {
+            if (res.message) {
+              $("#errorMessage").text(res.message);
+              $("#errorMessage").show();
+            } else {
+              window.location.assign("/profile");
             }
+          }
         });
         return false;
     });
@@ -112,18 +111,17 @@
 
             e.preventDefault();
             $.ajax({
-                url: "/sign_up",
-                type: 'POST',
-                data : $('#signupform').serialize(),
-                success: function(res){
-                    if(res.message){
-                        $('#errorMessageSignup').text(res.message);
-                        $('#errorMessageSignup').show();
-                    }
-                    else {
-                        window.location.assign('/profile');
-                    }
+              url: "/users/sign_up",
+              type: "POST",
+              data: $("#signupform").serialize(),
+              success: function(res) {
+                if (res.message) {
+                  $("#errorMessageSignup").text(res.message);
+                  $("#errorMessageSignup").show();
+                } else {
+                  window.location.assign("/profile");
                 }
+              }
             });
         });
     })(jQuery);

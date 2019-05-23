@@ -740,7 +740,7 @@
             </div>
 
             <div class="modal-body mx-3">
-                <form class="/login_user" method="post" action="home.html" id="loginForm">
+                <form class="/users/login_user" id ="loginForm" method="post" action="home.html" id="loginForm">
 
 
                     <div class="md-form mb-5">
@@ -761,7 +761,7 @@
 
                     </div>
                     <div class="modal-footer d-flex justify-content-center">
-                        <button class="btn btn-default">Login</button>
+                        <button class="btn btn-default" onclick="window.location.href='router/home.html';">Login</button>
                         <button class="btn btn-default" data-dismiss="modal" data-toggle="modal"
                                 data-target="#exampleModal">Register
                         </button>
@@ -786,7 +786,7 @@
             </div>
 
             <div class="modal-body mx-3">
-                <form class="/sign_up" method="post" action="home.html" id="signupform">
+                <form class="/users/sign_up" method="post" id="signupform" action="home.html" id="signupform">
 
 
                     <div class="md-form mb-5">
@@ -806,12 +806,6 @@
                                placeholder="Your Password">
 
                     </div>
-
-                    <!--<div class="md-form mb-4">-->
-                        <!--<i class="fa fa-user"></i>-->
-                        <!--<input type="text" class="form-control validate" name="uname" placeholder="Username">-->
-
-                    <!--</div>-->
 
                     <div class="md-form mb-4">
                         <i class="fa fa-users"></i>
